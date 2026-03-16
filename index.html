@@ -26,9 +26,19 @@
 <meta name="twitter:title" content="Where Winds Meet — Free Wuxia RPG">
 <meta name="twitter:description" content="Become a sword saint of the Tang Dynasty. Free to download for Windows.">
 <meta name="twitter:image" content="slide13.jpg">
+<link rel="preload" href="assets/hero-video.mp4" as="video" type="video/mp4">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<!-- Non-blocking async font load -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet"></noscript>
 <style>
+  /* Ensure text visible before fonts load */
+  .hero-title,.hero-eyebrow,.hero-tagline,.hero-subtitle,
+  .section-title,.section-eyebrow,.cta-primary,.header-logo-img{
+    font-display:swap;
+  }
   :root {
     --gold:#c9a84c; --gold-light:#e8c87a; --gold-dim:#7a6030;
     --jade:#3d7a6e; --jade-light:#5aac9c;
@@ -384,7 +394,7 @@
 
   <!-- Logo -->
   <a class="header-logo" href="#hero">
-    <img src="assets/logo.webp" alt="Where Winds Meet" class="header-logo-img">
+    <img src="assets/logo.webp" alt="Where Winds Meet" class="header-logo-img" width="220" height="60" loading="eager">
   </a>
 
   <div class="header-spacer"></div>
@@ -476,38 +486,38 @@
   <p class="slider-label" data-i18n="slider_label">The World of Where Winds Meet</p>
   <div class="slider-track-wrap slider-left">
     <div class="slider-track">
-      <img class="sph" src="assets/slide5.webp"  alt="Colossus Boss Fight"     loading="lazy">
-      <img class="sph" src="assets/slide8.webp"   alt="Ancient City"            loading="lazy">
-      <img class="sph" src="assets/slide1.webp"  alt="Tian Ying Boss Fight"    loading="lazy">
-      <img class="sph" src="assets/slide10.webp" alt="Market Streets"          loading="lazy">
-      <img class="sph" src="assets/slide4.webp"   alt="Crimson Forest"          loading="lazy">
-      <img class="sph" src="assets/slide9.webp"   alt="Open World"              loading="lazy">
-      <img class="sph" src="assets/slide13.webp"  alt="Ship Battle"             loading="lazy">
+      <img class="sph" src="assets/slide5.webp"  alt="Colossus Boss Fight"     loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide8.webp"   alt="Ancient City"            loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide1.webp"  alt="Tian Ying Boss Fight"    loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide10.webp" alt="Market Streets"          loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide4.webp"   alt="Crimson Forest"          loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide9.webp"   alt="Open World"              loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide13.webp"  alt="Ship Battle"             loading="lazy" width="420" height="240" decoding="async">
       <!-- duplicates for infinite loop -->
-      <img class="sph" src="assets/slide5.webp"  alt="Colossus Boss Fight"     loading="lazy">
-      <img class="sph" src="assets/slide8.webp"   alt="Ancient City"            loading="lazy">
-      <img class="sph" src="assets/slide1.webp"  alt="Tian Ying Boss Fight"    loading="lazy">
-      <img class="sph" src="assets/slide10.webp" alt="Market Streets"          loading="lazy">
-      <img class="sph" src="assets/slide4.webp"   alt="Crimson Forest"          loading="lazy">
-      <img class="sph" src="assets/slide9.webp"   alt="Open World"              loading="lazy">
-      <img class="sph" src="assets/slide13.webp"  alt="Ship Battle"             loading="lazy">
+      <img class="sph" src="assets/slide5.webp"  alt="Colossus Boss Fight"     loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide8.webp"   alt="Ancient City"            loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide1.webp"  alt="Tian Ying Boss Fight"    loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide10.webp" alt="Market Streets"          loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide4.webp"   alt="Crimson Forest"          loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide9.webp"   alt="Open World"              loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide13.webp"  alt="Ship Battle"             loading="lazy" width="420" height="240" decoding="async">
     </div>
   </div>
   <div class="slider-track-wrap slider-right">
     <div class="slider-track">
-      <img class="sph" src="assets/slide3.webp"   alt="Gameplay Combat"         loading="lazy">
-      <img class="sph" src="assets/slide11.webp"  alt="Sword Combat Review"     loading="lazy">
-      <img class="sph" src="assets/slide2.webp"   alt="Bow and Arrow"           loading="lazy">
-      <img class="sph" src="assets/slide7.webp"   alt="Einsteiger Guide"        loading="lazy">
-      <img class="sph" src="assets/slide6.webp"  alt="Zheng E Attack"          loading="lazy">
-      <img class="sph" src="assets/slide12.webp" alt="Flaming Arrow"           loading="lazy">
+      <img class="sph" src="assets/slide3.webp"   alt="Gameplay Combat"         loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide11.webp"  alt="Sword Combat Review"     loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide2.webp"   alt="Bow and Arrow"           loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide7.webp"   alt="Einsteiger Guide"        loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide6.webp"  alt="Zheng E Attack"          loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide12.webp" alt="Flaming Arrow"           loading="lazy" width="420" height="240" decoding="async">
       <!-- duplicates for infinite loop -->
-      <img class="sph" src="assets/slide3.webp"   alt="Gameplay Combat"         loading="lazy">
-      <img class="sph" src="assets/slide11.webp"  alt="Sword Combat Review"     loading="lazy">
-      <img class="sph" src="assets/slide2.webp"   alt="Bow and Arrow"           loading="lazy">
-      <img class="sph" src="assets/slide7.webp"   alt="Einsteiger Guide"        loading="lazy">
-      <img class="sph" src="assets/slide6.webp"  alt="Zheng E Attack"          loading="lazy">
-      <img class="sph" src="assets/slide12.webp" alt="Flaming Arrow"           loading="lazy">
+      <img class="sph" src="assets/slide3.webp"   alt="Gameplay Combat"         loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide11.webp"  alt="Sword Combat Review"     loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide2.webp"   alt="Bow and Arrow"           loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide7.webp"   alt="Einsteiger Guide"        loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide6.webp"  alt="Zheng E Attack"          loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide12.webp" alt="Flaming Arrow"           loading="lazy" width="420" height="240" decoding="async">
     </div>
   </div>
 </section>
@@ -611,7 +621,7 @@
   <div class="map-container reveal">
     <div class="map-ph">
       <!-- Real in-game map: Qinghe region, Where Winds Meet -->
-      <img src="assets/map.webp" alt="Where Winds Meet — Qinghe Region Map" loading="lazy" class="map-img">
+      <img src="assets/map.webp" alt="Where Winds Meet — Qinghe Region Map" loading="lazy" class="map-img" width="1400" height="600">
       <div class="map-overlay"></div>
 
       <!-- Markers repositioned to match geography visible in the Qinghe screenshot -->
