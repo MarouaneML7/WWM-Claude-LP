@@ -16,7 +16,7 @@
 <!-- Open Graph (Facebook, Discord, WhatsApp previews) -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Where Winds Meet — Free Wuxia RPG">
-<meta property="og:description" content="Become a sword saint of the Tang Dynasty. Master legendary martial arts in an epic open world. Free to download for Windows.">
+<meta property="og:description" content="Master legendary martial arts in an epic open world set in ancient China. Free to download for Windows.">
 <meta property="og:image" content="slide13.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="628">
@@ -24,21 +24,11 @@
 <!-- Twitter / X card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Where Winds Meet — Free Wuxia RPG">
-<meta name="twitter:description" content="Become a sword saint of the Tang Dynasty. Free to download for Windows.">
+<meta name="twitter:description" content="Master legendary martial arts in an epic open world. Free to download for Windows.">
 <meta name="twitter:image" content="slide13.jpg">
-<link rel="preload" href="assets/hero-video.mp4" as="video" type="video/mp4">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="dns-prefetch" href="https://fonts.gstatic.com">
-<!-- Non-blocking async font load -->
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet"></noscript>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+SC:wght@300;400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  /* Ensure text visible before fonts load */
-  .hero-title,.hero-eyebrow,.hero-tagline,.hero-subtitle,
-  .section-title,.section-eyebrow,.cta-primary,.header-logo-img{
-    font-display:swap;
-  }
   :root {
     --gold:#c9a84c; --gold-light:#e8c87a; --gold-dim:#7a6030;
     --jade:#3d7a6e; --jade-light:#5aac9c;
@@ -96,9 +86,6 @@
   .header-spacer{flex:1}
 
   /* Nav links */
-  .header-nav{display:flex;align-items:center;gap:28px}
-  .header-nav a{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:rgba(212,197,169,.5);text-decoration:none;text-transform:uppercase;transition:color .3s;cursor:none;white-space:nowrap}
-  .header-nav a:hover{color:var(--gold)}
 
   /* Header CTA */
   .header-cta{
@@ -117,7 +104,6 @@
 
   /* RTL header flip */
   [dir="rtl"] #site-header{padding:0 40px}
-  [dir="rtl"] .header-nav{flex-direction:row-reverse}
 
   /* ── Language Switcher (inside header) ── */
   #lang-switcher{position:relative;z-index:10;flex-shrink:0}
@@ -182,10 +168,9 @@
   @keyframes mistDrift{0%{transform:translateX(-100%) scaleX(.5);opacity:0}20%{opacity:1}80%{opacity:1}100%{transform:translateX(120%) scaleX(1.5);opacity:0}}
   .hero-overlay{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%,transparent 30%,rgba(10,10,15,.7) 80%),linear-gradient(to bottom,rgba(10,10,15,.3) 0%,rgba(10,10,15,.1) 40%,rgba(10,10,15,.7) 85%,rgba(10,10,15,1) 100%);z-index:1}
   .hero-content{position:relative;z-index:2;text-align:center;max-width:920px;padding:0 40px}
-  .hero-chinese{font-family:'Noto Serif SC',serif;font-size:72px;color:rgba(201,168,76,.1);position:absolute;top:-70px;left:50%;transform:translateX(-50%);letter-spacing:8px;pointer-events:none;white-space:nowrap}
+  /* .hero-chinese removed */
   .hero-eyebrow{font-family:'Cinzel',serif;font-size:11px;letter-spacing:6px;color:var(--gold);text-transform:uppercase;margin-bottom:24px;opacity:0;animation:fadeUp 1s .3s ease forwards;display:block}
-  .hero-title{font-family:'Cinzel',serif;font-size:clamp(50px,7vw,96px);font-weight:900;color:var(--white);line-height:1;letter-spacing:4px;text-shadow:0 0 60px rgba(201,168,76,.3),0 4px 20px rgba(0,0,0,.8);margin-bottom:8px;opacity:0;animation:fadeUp 1s .5s ease forwards}
-  .hero-title span{color:var(--gold);display:block}
+  /* .hero-title removed — game title moved to header logo only */
   .hero-subtitle{font-family:'Crimson Pro',serif;font-size:clamp(17px,2vw,23px);font-style:italic;font-weight:300;color:rgba(212,197,169,.75);margin-bottom:10px;opacity:0;animation:fadeUp 1s .7s ease forwards}
   .hero-tagline{font-family:'Cinzel',serif;font-size:clamp(11px,1.3vw,15px);letter-spacing:3px;color:rgba(201,168,76,.7);text-transform:uppercase;margin-bottom:50px;opacity:0;animation:fadeUp 1s .9s ease forwards}
   .cta-primary{display:inline-flex;align-items:center;gap:14px;padding:18px 52px;background:linear-gradient(135deg,var(--gold-dim),var(--gold),var(--gold-dim));background-size:200% 100%;color:var(--ink);font-family:'Cinzel',serif;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:none;cursor:none;position:relative;overflow:hidden;clip-path:polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%);transition:background-position .4s,box-shadow .4s,transform .2s;opacity:0;animation:fadeUp 1s 1.1s ease forwards}
@@ -381,9 +366,274 @@
   /* Lang fade */
   .lang-fade *[data-i18n]{animation:iFade .35s ease}
   @keyframes iFade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+
+  /* ══ STATS BAR ══ */
+  #stats-bar{padding:80px 0;background:linear-gradient(to bottom,var(--ink),var(--ink-mid));z-index:2;position:relative;overflow:hidden}
+  #stats-bar::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(201,168,76,.05) 0%,transparent 70%);pointer-events:none}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;align-items:stretch}
+  .stat-card{
+    padding:44px 28px 40px;
+    text-align:center;
+    background:rgba(255,255,255,.02);
+    border:1px solid rgba(201,168,76,.08);
+    position:relative;overflow:hidden;
+    transition:all .4s;cursor:default;
+    display:flex;flex-direction:column;align-items:center;
+  }
+  .stat-card::before{
+    content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+    background:linear-gradient(to right,transparent,var(--gold),transparent);
+    transform:scaleX(0);transition:transform .4s;
+  }
+  /* Left border accent line */
+  .stat-card::after{
+    content:'';position:absolute;top:20%;bottom:20%;left:0;width:1px;
+    background:linear-gradient(to bottom,transparent,rgba(201,168,76,.15),transparent);
+  }
+  .stat-card:first-child::after{display:none}
+  .stat-card:hover{border-color:rgba(201,168,76,.22);background:rgba(201,168,76,.03);transform:translateY(-3px)}
+  .stat-card:hover::before{transform:scaleX(1)}
+
+  /* Icon container — fixed size so all icons take same vertical space */
+  .stat-icon{
+    width:52px;height:52px;
+    margin:0 auto 22px;
+    flex-shrink:0;
+    position:relative;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .stat-icon::before{
+    content:'';position:absolute;inset:-8px;
+    border-radius:50%;
+    border:1px solid rgba(201,168,76,.12);
+  }
+  .stat-icon svg{width:100%;height:100%;display:block;filter:drop-shadow(0 0 12px rgba(201,168,76,.4))}
+
+  /* Number — fixed height, all cards same size */
+  .stat-number{
+    font-family:'Cinzel',serif;
+    font-size:clamp(30px,3.5vw,48px);
+    font-weight:900;
+    color:var(--gold-light);
+    letter-spacing:2px;
+    line-height:1;
+    margin-bottom:10px;
+    display:block;
+    height:56px; /* fixed — keeps all cards aligned */
+    display:flex;align-items:center;justify-content:center;
+  }
+  .stat-number sup{
+    color:var(--gold);font-size:.48em;
+    vertical-align:super;font-weight:400;letter-spacing:0;margin-left:2px;
+  }
+
+  /* Label — same font/size for all 4 */
+  .stat-label{
+    font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;
+    color:var(--text-dim);text-transform:uppercase;
+    margin-bottom:6px;display:block;
+  }
+  /* Sublabel — same size/style for all 4 */
+  .stat-sublabel{
+    font-size:12px;font-style:italic;
+    color:rgba(201,168,76,.4);display:block;
+    line-height:1.4;
+  }
+
+  /* ══ REVIEWS ══ */
+  #reviews{padding:100px 0;background:var(--ink);z-index:2;position:relative}
+  #reviews::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(201,168,76,.04) 0%,transparent 60%);pointer-events:none}
+  .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:60px}
+  .review-card{
+    padding:36px;
+    background:rgba(255,255,255,.02);
+    border:1px solid rgba(201,168,76,.08);
+    position:relative;overflow:hidden;
+    transition:all .4s;
+  }
+  .review-card::before{
+    content:'\201C';
+    position:absolute;top:-10px;right:20px;
+    font-family:Georgia,serif;font-size:120px;
+    color:rgba(201,168,76,.06);line-height:1;
+    pointer-events:none;
+  }
+  .review-card:hover{border-color:rgba(201,168,76,.18);background:rgba(201,168,76,.02);transform:translateY(-3px)}
+  .review-stars{display:flex;gap:3px;margin-bottom:16px}
+  .review-stars span{color:var(--gold);font-size:14px}
+  .review-tag{
+    display:inline-flex;align-items:center;gap:6px;
+    padding:3px 10px;margin-bottom:14px;
+    background:rgba(61,122,110,.15);border:1px solid rgba(90,172,156,.2);
+    font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;
+    color:var(--jade-light);text-transform:uppercase;
+  }
+  .review-text{
+    font-size:15px;line-height:1.75;color:var(--text);
+    font-style:italic;margin-bottom:24px;position:relative;z-index:1;
+  }
+  .review-text strong{color:var(--gold-light);font-style:normal}
+  .review-footer{display:flex;align-items:center;gap:12px;padding-top:20px;border-top:1px solid rgba(255,255,255,.06)}
+  .review-avatar{
+    width:38px;height:38px;border-radius:50%;
+    background:linear-gradient(135deg,var(--gold-dim),rgba(61,122,110,.5));
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Cinzel',serif;font-size:14px;font-weight:700;color:var(--gold-light);
+    flex-shrink:0;border:1px solid rgba(201,168,76,.2);
+  }
+  .review-meta{flex:1}
+  .review-name{font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;color:var(--white);margin-bottom:3px}
+  .review-hrs{font-size:12px;color:var(--text-dim);font-style:italic}
+  .review-steam{font-size:18px;margin-left:auto;opacity:.4}
+  .review-helpful{font-family:'Cinzel',serif;font-size:9px;letter-spacing:1px;color:rgba(201,168,76,.35);margin-top:10px;display:block}
+
+
+  /* ══ URGENCY BANNER ══ */
+  #urgency-bar{
+    position:fixed;top:0;left:0;right:0;z-index:4000;
+    background:linear-gradient(90deg,#8b1a1a,#a02020,#8b1a1a);
+    background-size:200% 100%;
+    animation:urgencyShimmer 4s ease infinite;
+    padding:9px 20px;
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;
+    color:rgba(255,220,180,0.95);text-transform:uppercase;
+    border-bottom:1px solid rgba(255,150,100,.2);
+  }
+  @keyframes urgencyShimmer{0%,100%{background-position:0% 0}50%{background-position:100% 0}}
+  .urgency-dot{
+    width:7px;height:7px;border-radius:50%;background:#ff6b4a;
+    box-shadow:0 0 6px #ff6b4a;
+    animation:urgencyPulse 1.5s ease infinite;flex-shrink:0;
+  }
+  @keyframes urgencyPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.3)}}
+  .urgency-text strong{color:#ffd280;}
+  .urgency-close{
+    position:absolute;right:16px;top:50%;transform:translateY(-50%);
+    background:none;border:none;color:rgba(255,200,160,.6);
+    font-size:14px;cursor:none;padding:4px;line-height:1;
+    transition:color .2s;
+  }
+  .urgency-close:hover{color:rgba(255,200,160,1);}
+  /* Push everything down by banner height */
+  #site-header{top:36px}
+  body{padding-top:36px}
+
+
+  /* Hero logo — official WWM logo above conversion H1 */
+  .hero-emblem{
+    margin:0 auto 28px;
+    opacity:0;animation:fadeUp 1s .2s ease forwards;
+    filter:drop-shadow(0 0 24px rgba(201,168,76,.25));
+  }
+  .hero-logo-img{
+    height:160px;
+    width:auto;
+    display:block;
+    margin:0 auto;
+    mix-blend-mode:screen; /* kills any residual white fringe */
+    filter:brightness(1.05);
+  }
+
+  /* Hero H1 — conversion copy, NOT the game title */
+  .hero-headline{
+    font-family:'Cinzel',serif;
+    font-size:clamp(24px,3.2vw,48px);
+    font-weight:900;
+    letter-spacing:3px;
+    color:var(--white);
+    text-transform:uppercase;
+    line-height:1.15;
+    margin-bottom:16px;
+    max-width:100%;
+    text-shadow:0 0 60px rgba(201,168,76,.3),0 4px 20px rgba(0,0,0,.8);
+    opacity:0;
+    animation:fadeUp 1s .4s ease forwards;
+  }
+
+  /* Live counter */
+  #live-counter{
+    display:inline-flex;align-items:center;gap:8px;
+    margin-bottom:20px;padding:7px 18px;
+    background:rgba(0,180,80,.08);
+    border:1px solid rgba(0,200,80,.2);
+    font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;
+    color:rgba(120,255,150,.85);
+    opacity:0;animation:fadeUp 1s .35s ease forwards;
+  }
+  .live-dot{
+    width:7px;height:7px;border-radius:50%;
+    background:#4eff80;box-shadow:0 0 6px #4eff80;
+    animation:urgencyPulse 1.5s infinite;flex-shrink:0;display:inline-block;
+  }
+
+  /* Hero mini stats bar */
+  .hero-stats{
+    display:flex;align-items:center;justify-content:center;
+    gap:16px;margin-bottom:28px;
+    opacity:0;animation:fadeUp 1s 1s ease forwards;
+  }
+  .hero-stat{display:flex;flex-direction:column;align-items:center;gap:2px}
+  .hero-stat-num{
+    font-family:'Cinzel',serif;font-size:22px;font-weight:900;
+    color:var(--gold-light);line-height:1;
+    text-shadow:0 0 20px rgba(201,168,76,.4);
+  }
+  .hero-stat-label{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--text-dim);text-transform:uppercase}
+  .hero-stat-sep{font-size:20px;color:rgba(201,168,76,.25);margin-top:-8px}
+
+  /* Hero reassurance text */
+  .hero-reassurance{
+    font-family:'Cinzel',serif;font-size:10px;letter-spacing:2px;
+    color:rgba(201,168,76,.5);margin-top:14px;
+    opacity:0;animation:fadeUp 1s 1.2s ease forwards;
+  }
+
+
+  /* ══ WHY FREE SECTION ══ */
+  #why-free{padding:90px 0;background:linear-gradient(to bottom,var(--ink-mid),var(--ink));z-index:2;position:relative}
+  #why-free::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(139,32,32,.06) 0%,transparent 60%);pointer-events:none}
+  .why-free-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px}
+  .why-free-card{
+    padding:44px 36px;
+    background:rgba(255,255,255,.02);
+    border:1px solid rgba(201,168,76,.07);
+    text-align:center;
+    transition:all .4s;position:relative;overflow:hidden;
+  }
+  .why-free-card::after{
+    content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+    background:linear-gradient(to right,transparent,rgba(139,32,32,.5),transparent);
+    transform:scaleX(0);transition:transform .4s;
+  }
+  .why-free-card:hover{border-color:rgba(201,168,76,.15);transform:translateY(-3px)}
+  .why-free-card:hover::after{transform:scaleX(1)}
+  .why-free-icon{
+    width:56px;height:56px;margin:0 auto 20px;
+    background:rgba(139,32,32,.12);border:1px solid rgba(139,32,32,.3);
+    border-radius:50%;display:flex;align-items:center;justify-content:center;
+    font-size:24px;
+  }
+  .why-free-title{font-family:'Cinzel',serif;font-size:13px;font-weight:700;letter-spacing:2px;color:var(--gold-light);margin-bottom:14px;text-transform:uppercase}
+  .why-free-desc{font-size:14px;font-style:italic;color:var(--text-dim);line-height:1.75}
+  .why-free-badge{
+    display:inline-block;margin-top:14px;
+    padding:3px 12px;background:rgba(139,32,32,.15);
+    border:1px solid rgba(139,32,32,.3);
+    font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;
+    color:rgba(255,150,100,.8);text-transform:uppercase;
+  }
+
 </style>
 </head>
 <body>
+
+<!-- ══ URGENCY BANNER ══ -->
+<div id="urgency-bar">
+  <div class="urgency-dot"></div>
+  <span class="urgency-text" data-i18n="urgency_text">🔥 <strong>Version 1.4 “Home Afar”</strong> — New content available now · 100% Free</span>
+  <button class="urgency-close" id="urgency-close" aria-label="Close">✕</button>
+</div>
 
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
@@ -394,19 +644,10 @@
 
   <!-- Logo -->
   <a class="header-logo" href="#hero">
-    <img src="assets/logo.webp" alt="Where Winds Meet" class="header-logo-img" width="220" height="60" loading="eager">
+    <img src="assets/logo.webp" alt="Where Winds Meet" class="header-logo-img">
   </a>
 
   <div class="header-spacer"></div>
-
-  <!-- Nav links -->
-  <nav class="header-nav" aria-label="Page sections">
-    <a href="#gameplay" data-i18n="nav_gameplay">Gameplay</a>
-    <a href="#abilities" data-i18n="nav_abilities">Abilities</a>
-    <a href="#world-map" data-i18n="nav_world">World</a>
-    <a href="#system-req" data-i18n="nav_system">System</a>
-    <a href="#faq" data-i18n="nav_faq">FAQ</a>
-  </nav>
 
   <!-- Language Switcher -->
   <div id="lang-switcher">
@@ -427,7 +668,7 @@
   </div>
 
   <!-- Header CTA -->
-  <a href="https://to.wendiro.com/u?k=9db47141846349488810b469b5a18a32&via=19025" class="header-cta" target="_blank" rel="noopener" data-i18n="cta_short">
+  <a href="https://to.wendiro.com/u?k=9db47141846349488810b469b5a18a32&via=19025" class="header-cta" target="_blank" rel="noopener noreferrer" data-i18n="cta_short">
     Download <span style="display:none" class="header-cta-icon">⬇</span>
   </a>
 <!-- Google tag (gtag.js) -->
@@ -465,17 +706,48 @@
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-chinese" aria-hidden="true">乘风而遇</div>
-    <span class="hero-eyebrow" data-i18n="hero_eyebrow">An Epic Open World Wuxia RPG</span>
-    <h1 class="hero-title">Where Winds<span>Meet</span></h1>
-    <p class="hero-subtitle" data-i18n="hero_subtitle">Ancient China. Boundless Skies. One Legendary Path.</p>
-    <p class="hero-tagline" data-i18n="hero_tagline">Become a Sword Saint of the Tang Dynasty</p>
-    <a href="https://to.wendiro.com/u?k=9db47141846349488810b469b5a18a32&via=19025" class="cta-primary" target="_blank" rel="noopener" data-i18n="cta_download">Download Where Winds Meet for Windows<div class="cta-arrow"></div></a>
+
+    <!-- Official WWM logo — white removed, placed above conversion H1 -->
+    <div class="hero-emblem" aria-hidden="true">
+      <img src="assets/hero-logo.webp" alt="Where Winds Meet" class="hero-logo-img">
+    </div>
+
+    <span class="hero-eyebrow" data-i18n="hero_eyebrow">Free to Play — Open World Action RPG</span>
+
+    <!-- H1 = conversion copy — NOT the game title (brand lives in header logo) -->
+    <!-- Version A — Numbers:  "9M Players Already Started" · "Join Them — 100% Free on PC" -->
+    <!-- Version B — Promise:  "150 Hours in Ancient China" · "Free. Never Pay-to-Win. On PC Now." -->
+    <!-- Version C — FOMO (active): -->
+    <h1 class="hero-headline" data-i18n="hero_headline">The Wuxia RPG<br>Everyone Is Playing</h1>
+
+    <p class="hero-subtitle" data-i18n="hero_subtitle">Boss Fights. Sword Mastery. Aerial Combat.<br>An Entire Open World — Zero Cost.</p>
+    <p class="hero-tagline" data-i18n="hero_tagline">9M Players · 9/10 Steam · 100% Free</p>
+
+    <!-- Live social proof counter -->
+    <div id="live-counter">
+      <span class="live-dot"></span>
+      <span id="live-count">247</span> <span data-i18n="live_counter_text">players downloaded in the last hour</span>
+    </div>
+
+    <!-- Mini stats bar -->
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="hero-stat-num">10M+</span><span class="hero-stat-label" data-i18n="hstat_players">Players</span></div>
+      <div class="hero-stat-sep">·</div>
+      <div class="hero-stat"><span class="hero-stat-num">9/10</span><span class="hero-stat-label" data-i18n="hstat_rating">Steam Rating</span></div>
+      <div class="hero-stat-sep">·</div>
+      <div class="hero-stat"><span class="hero-stat-num">100%</span><span class="hero-stat-label" data-i18n="hstat_free">Free</span></div>
+    </div>
+
+    <a href="https://to.wendiro.com/u?k=9db47141846349488810b469b5a18a32&via=19025" class="cta-primary" target="_blank" rel="noopener noreferrer" data-i18n="cta_download">▶ Play Free Now — Windows<div class="cta-arrow"></div></a>
+
+    <p class="hero-reassurance" data-i18n="hero_reassurance">✓ No Credit Card &nbsp;·&nbsp; ✓ No Pay-to-Win &nbsp;·&nbsp; ✓ Windows 10/11</p>
+
     <div class="trust-badges">
       <span class="trust-badge" data-i18n="trust_1">Free Official Installer</span>
       <span class="trust-badge" data-i18n="trust_2">Windows Compatible</span>
       <span class="trust-badge" data-i18n="trust_3">Secure Download</span>
     </div>
+
   </div>
   <div class="scroll-hint"><span data-i18n="scroll_hint">Scroll to Enter</span><div class="scroll-line"></div></div>
 </section>
@@ -486,41 +758,162 @@
   <p class="slider-label" data-i18n="slider_label">The World of Where Winds Meet</p>
   <div class="slider-track-wrap slider-left">
     <div class="slider-track">
-      <img class="sph" src="assets/slide5.webp"  alt="Colossus Boss Fight"     loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide8.webp"   alt="Ancient City"            loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide1.webp"  alt="Tian Ying Boss Fight"    loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide10.webp" alt="Market Streets"          loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide4.webp"   alt="Crimson Forest"          loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide9.webp"   alt="Open World"              loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide13.webp"  alt="Ship Battle"             loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide5.webp"  alt="Colossus Boss Fight"     loading="lazy">
+      <img class="sph" src="assets/slide8.webp"   alt="Ancient City"            loading="lazy">
+      <img class="sph" src="assets/slide1.webp"  alt="Tian Ying Boss Fight"    loading="lazy">
+      <img class="sph" src="assets/slide10.webp" alt="Market Streets"          loading="lazy">
+      <img class="sph" src="assets/slide4.webp"   alt="Crimson Forest"          loading="lazy">
+      <img class="sph" src="assets/slide9.webp"   alt="Open World"              loading="lazy">
+      <img class="sph" src="assets/slide13.webp"  alt="Ship Battle"             loading="lazy">
       <!-- duplicates for infinite loop -->
-      <img class="sph" src="assets/slide5.webp"  alt="Colossus Boss Fight"     loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide8.webp"   alt="Ancient City"            loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide1.webp"  alt="Tian Ying Boss Fight"    loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide10.webp" alt="Market Streets"          loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide4.webp"   alt="Crimson Forest"          loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide9.webp"   alt="Open World"              loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide13.webp"  alt="Ship Battle"             loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide5.webp"  alt="Colossus Boss Fight"     loading="lazy">
+      <img class="sph" src="assets/slide8.webp"   alt="Ancient City"            loading="lazy">
+      <img class="sph" src="assets/slide1.webp"  alt="Tian Ying Boss Fight"    loading="lazy">
+      <img class="sph" src="assets/slide10.webp" alt="Market Streets"          loading="lazy">
+      <img class="sph" src="assets/slide4.webp"   alt="Crimson Forest"          loading="lazy">
+      <img class="sph" src="assets/slide9.webp"   alt="Open World"              loading="lazy">
+      <img class="sph" src="assets/slide13.webp"  alt="Ship Battle"             loading="lazy">
     </div>
   </div>
   <div class="slider-track-wrap slider-right">
     <div class="slider-track">
-      <img class="sph" src="assets/slide3.webp"   alt="Gameplay Combat"         loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide11.webp"  alt="Sword Combat Review"     loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide2.webp"   alt="Bow and Arrow"           loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide7.webp"   alt="Einsteiger Guide"        loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide6.webp"  alt="Zheng E Attack"          loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide12.webp" alt="Flaming Arrow"           loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide3.webp"   alt="Gameplay Combat"         loading="lazy">
+      <img class="sph" src="assets/slide11.webp"  alt="Sword Combat Review"     loading="lazy">
+      <img class="sph" src="assets/slide2.webp"   alt="Bow and Arrow"           loading="lazy">
+      <img class="sph" src="assets/slide7.webp"   alt="Einsteiger Guide"        loading="lazy">
+      <img class="sph" src="assets/slide6.webp"  alt="Zheng E Attack"          loading="lazy">
+      <img class="sph" src="assets/slide12.webp" alt="Flaming Arrow"           loading="lazy">
       <!-- duplicates for infinite loop -->
-      <img class="sph" src="assets/slide3.webp"   alt="Gameplay Combat"         loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide11.webp"  alt="Sword Combat Review"     loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide2.webp"   alt="Bow and Arrow"           loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide7.webp"   alt="Einsteiger Guide"        loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide6.webp"  alt="Zheng E Attack"          loading="lazy" width="420" height="240" decoding="async">
-      <img class="sph" src="assets/slide12.webp" alt="Flaming Arrow"           loading="lazy" width="420" height="240" decoding="async">
+      <img class="sph" src="assets/slide3.webp"   alt="Gameplay Combat"         loading="lazy">
+      <img class="sph" src="assets/slide11.webp"  alt="Sword Combat Review"     loading="lazy">
+      <img class="sph" src="assets/slide2.webp"   alt="Bow and Arrow"           loading="lazy">
+      <img class="sph" src="assets/slide7.webp"   alt="Einsteiger Guide"        loading="lazy">
+      <img class="sph" src="assets/slide6.webp"  alt="Zheng E Attack"          loading="lazy">
+      <img class="sph" src="assets/slide12.webp" alt="Flaming Arrow"           loading="lazy">
     </div>
   </div>
 </section>
+
+<div class="gold-line"></div>
+
+<!-- ══ STATS BAR ══ -->
+<section id="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+
+      <!-- Card 1: Players — Wuxia warrior silhouettes with qi circles -->
+      <div class="stat-card reveal d1">
+        <span class="stat-icon">
+          <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Outer octagon frame (wuxia seal motif) -->
+            <polygon points="26,3 36,7 45,16 49,26 45,36 36,45 26,49 16,45 7,36 3,26 7,16 16,7"
+              stroke="rgba(201,168,76,0.2)" stroke-width="0.8" fill="none"/>
+            <!-- Inner diamond -->
+            <polygon points="26,10 38,22 26,34 14,22"
+              stroke="rgba(201,168,76,0.15)" stroke-width="0.6" fill="none"/>
+            <!-- Two warrior silhouettes (simplified) -->
+            <circle cx="19" cy="19" r="4" stroke="rgba(201,168,76,0.9)" stroke-width="1.4" fill="rgba(201,168,76,0.1)"/>
+            <path d="M12 35c0-4.4 3.1-7 7-7s7 2.6 7 7" stroke="rgba(201,168,76,0.9)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+            <circle cx="33" cy="19" r="4" stroke="rgba(201,168,76,0.55)" stroke-width="1.4" fill="rgba(201,168,76,0.06)"/>
+            <path d="M26 35c0-4.4 3.1-7 7-7s7 2.6 7 7" stroke="rgba(201,168,76,0.55)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+            <!-- Plus ornament (top right, classic Chinese corner) -->
+            <line x1="43" y1="9" x2="43" y2="15" stroke="rgba(201,168,76,0.5)" stroke-width="1.2" stroke-linecap="round"/>
+            <line x1="40" y1="12" x2="46" y2="12" stroke="rgba(201,168,76,0.5)" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="stat-number">10M<sup>+</sup></span>
+        <span class="stat-label">Active Players</span>
+        <span class="stat-sublabel">Worldwide Community</span>
+      </div>
+
+      <!-- Card 2: Rating — Ornamental star within diamond frame -->
+      <div class="stat-card reveal d2">
+        <span class="stat-icon">
+          <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Outer octagon frame -->
+            <polygon points="26,3 36,7 45,16 49,26 45,36 36,45 26,49 16,45 7,36 3,26 7,16 16,7"
+              stroke="rgba(201,168,76,0.2)" stroke-width="0.8" fill="none"/>
+            <!-- Diamond outer -->
+            <polygon points="26,8 42,24 26,40 10,24"
+              stroke="rgba(201,168,76,0.25)" stroke-width="0.8" fill="none"/>
+            <!-- Classic 8-point star (wuxia compass rose) -->
+            <polygon points="26,8 28,20 38,14 30,22 44,24 32,26 38,36 28,28 26,40 24,28 14,36 20,26 8,24 22,22 14,14 24,20"
+              stroke="rgba(201,168,76,0.85)" stroke-width="1.2"
+              fill="rgba(201,168,76,0.1)" stroke-linejoin="round"/>
+            <!-- Center jewel -->
+            <circle cx="26" cy="24" r="3.5" stroke="rgba(201,168,76,0.7)" stroke-width="1" fill="rgba(201,168,76,0.25)"/>
+            <circle cx="26" cy="24" r="1.5" fill="rgba(201,168,76,0.8)"/>
+          </svg>
+        </span>
+        <span class="stat-number">9<sup>/10</sup></span>
+        <span class="stat-label">Steam Rating</span>
+        <span class="stat-sublabel">Overwhelmingly Positive</span>
+      </div>
+
+      <!-- Card 3: GOTY — Ornamental trophy with Chinese roof silhouette -->
+      <div class="stat-card reveal d3">
+        <span class="stat-icon">
+          <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Outer octagon -->
+            <polygon points="26,3 36,7 45,16 49,26 45,36 36,45 26,49 16,45 7,36 3,26 7,16 16,7"
+              stroke="rgba(201,168,76,0.2)" stroke-width="0.8" fill="none"/>
+            <!-- Trophy body -->
+            <path d="M15 8h22v16a11 11 0 01-22 0V8z"
+              stroke="rgba(201,168,76,0.85)" stroke-width="1.4"
+              fill="rgba(201,168,76,0.08)" stroke-linejoin="round"/>
+            <!-- Trophy handles — curved like Chinese vessel ears -->
+            <path d="M15 12c-3 0-6 2-5 6" stroke="rgba(201,168,76,0.6)" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+            <path d="M37 12c3 0 6 2 5 6" stroke="rgba(201,168,76,0.6)" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+            <!-- Stem -->
+            <line x1="26" y1="35" x2="26" y2="42" stroke="rgba(201,168,76,0.7)" stroke-width="1.4" stroke-linecap="round"/>
+            <!-- Base with end-caps (like Chinese pedestal) -->
+            <path d="M18 42h16" stroke="rgba(201,168,76,0.85)" stroke-width="2" stroke-linecap="round"/>
+            <path d="M20 45h12" stroke="rgba(201,168,76,0.5)" stroke-width="1.4" stroke-linecap="round"/>
+            <!-- Inner 8-point ornament on cup -->
+            <polygon points="26,13 27.2,16.5 31,16.5 28.4,18.5 29.4,22 26,20 22.6,22 23.6,18.5 21,16.5 24.8,16.5"
+              fill="rgba(201,168,76,0.45)" stroke="rgba(201,168,76,0.3)" stroke-width="0.5"/>
+          </svg>
+        </span>
+        <span class="stat-number">GOTY<sup>★</sup></span>
+        <span class="stat-label">TapTap Awards 2025</span>
+        <span class="stat-sublabel">Featured at The Game Awards</span>
+      </div>
+
+      <!-- Card 4: Free — Broken shackle / open gate motif -->
+      <div class="stat-card reveal d4">
+        <span class="stat-icon">
+          <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Outer octagon -->
+            <polygon points="26,3 36,7 45,16 49,26 45,36 36,45 26,49 16,45 7,36 3,26 7,16 16,7"
+              stroke="rgba(201,168,76,0.2)" stroke-width="0.8" fill="none"/>
+            <!-- Lock body (slightly open / broken) -->
+            <rect x="14" y="22" width="24" height="20" rx="3"
+              stroke="rgba(201,168,76,0.85)" stroke-width="1.4"
+              fill="rgba(201,168,76,0.08)"/>
+            <!-- Shackle — broken open on right, intact on left -->
+            <path d="M32 22v-7a6 6 0 00-12 0v7"
+              stroke="rgba(201,168,76,0.85)" stroke-width="1.4"
+              fill="none" stroke-linecap="round"/>
+            <!-- Break gap — white mask trick -->
+            <line x1="32" y1="15" x2="32" y2="20" stroke="rgba(10,10,15,1)" stroke-width="4"/>
+            <!-- Broken end sparks -->
+            <line x1="34" y1="13" x2="37" y2="10" stroke="rgba(201,168,76,0.7)" stroke-width="1.2" stroke-linecap="round"/>
+            <line x1="36" y1="17" x2="40" y2="16" stroke="rgba(201,168,76,0.5)" stroke-width="1" stroke-linecap="round"/>
+            <line x1="33" y1="11" x2="35" y2="8" stroke="rgba(201,168,76,0.4)" stroke-width="1" stroke-linecap="round"/>
+            <!-- Keyhole -->
+            <circle cx="26" cy="31" r="3.5" stroke="rgba(201,168,76,0.65)" stroke-width="1.2" fill="none"/>
+            <line x1="26" y1="34.5" x2="26" y2="38" stroke="rgba(201,168,76,0.65)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="stat-number">FREE<sup>∞</sup></span>
+        <span class="stat-label">No Purchase Required</span>
+        <span class="stat-sublabel">No Pay-to-Win · Ever</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <div class="gold-line"></div>
 
 <!-- ══ GAMEPLAY GALLERY ══ -->
@@ -583,7 +976,7 @@
       </div>
     </div>
     <div class="trailer-cta reveal">
-      <a href="https://to.wendiro.com/u?k=9db47141846349488810b469b5a18a32&via=19025" class="cta-primary no-anim" target="_blank" rel="noopener" data-i18n="cta_short">Download for Windows<div class="cta-arrow"></div></a>
+      <a href="https://to.wendiro.com/u?k=9db47141846349488810b469b5a18a32&via=19025" class="cta-primary no-anim" target="_blank" rel="noopener noreferrer" data-i18n="cta_short">▶ Play Free Now<div class="cta-arrow"></div></a>
     </div>
   </div>
 </section>
@@ -607,9 +1000,127 @@
     </div>
   </div>
 </section>
+
+<div class="gold-line"></div>
+
+<!-- ══ WHY IT'S FREE ══ -->
+<section id="why-free">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Transparency</span>
+      <h2 class="section-title">Why Is It Free?</h2>
+      <p class="section-desc">The developers committed to this from day one. Here's exactly what "free" means.</p>
+    </div>
+    <div class="why-free-grid">
+
+      <div class="why-free-card reveal d1">
+        <div class="why-free-icon">🛡</div>
+        <h3 class="why-free-title">Zero Pay-to-Win</h3>
+        <p class="why-free-desc">The developers officially guaranteed it: no purchasable item ever gives a combat advantage. Your legend is written by skill — never by wallet size.</p>
+        <span class="why-free-badge">Officially Guaranteed</span>
+      </div>
+
+      <div class="why-free-card reveal d2">
+        <div class="why-free-icon">🎭</div>
+        <h3 class="why-free-title">Cosmetics Only</h3>
+        <p class="why-free-desc">The in-game shop sells outfits, visual effects, and cosmetic items only. Every stat, skill, weapon, and story chapter is unlocked through gameplay.</p>
+        <span class="why-free-badge">Cosmetics · Outfits · Effects</span>
+      </div>
+
+      <div class="why-free-card reveal d3">
+        <div class="why-free-icon">🔄</div>
+        <h3 class="why-free-title">Free Updates Forever</h3>
+        <p class="why-free-desc">Every version — v1.1 through v1.4 "Home Afar" — added full regions, quests, and bosses at zero cost. New content keeps coming, always free.</p>
+        <span class="why-free-badge">v1.4 Available Now</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <div class="gold-line"></div>
 
 <!-- ══ WORLD MAP ══ -->
+
+<div class="gold-line"></div>
+
+<!-- ══ REVIEWS ══ -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Steam Reviews</span>
+      <h2 class="section-title">What Players Are Saying</h2>
+      <p class="section-desc">Real reviews from the Steam community.</p>
+    </div>
+
+    <div class="reviews-grid">
+
+      <!-- Review 1 -->
+      <div class="review-card reveal d1">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="review-tag">👍 Recommended</div>
+        <p class="review-text">
+          "Pretty great for a free game. Great storytelling, amazing open world experience.
+          The most noteworthy part — <strong>the gacha system is only for cosmetics</strong>,
+          not for game content. That's rare in free games."
+        </p>
+        <div class="review-footer">
+          <div class="review-avatar">A</div>
+          <div class="review-meta">
+            <div class="review-name">ArWen</div>
+            <div class="review-hrs">138 hrs on record</div>
+          </div>
+          <span class="review-steam">⊞</span>
+        </div>
+        <span class="review-helpful">22 people found this helpful</span>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card reveal d2">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="review-tag">👍 Recommended</div>
+        <p class="review-text">
+          "Absolutely gorgeous open world with beautiful ambient music.
+          Tons of NPCs and animals to interact with.
+          <strong>This game's open world is what Assassin's Creed wishes it could be.</strong>
+          Best of all — it's free."
+        </p>
+        <div class="review-footer">
+          <div class="review-avatar">J</div>
+          <div class="review-meta">
+            <div class="review-name">Jhemp12</div>
+            <div class="review-hrs">16.4 hrs on record</div>
+          </div>
+          <span class="review-steam">⊞</span>
+        </div>
+        <span class="review-helpful">15 people found this helpful</span>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card reveal d3">
+        <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <div class="review-tag">👍 Recommended</div>
+        <p class="review-text">
+          "I assumed it would be a good-looking grindfest.
+          It distracted me so much <strong>I was already level 65 before I even started the main story.</strong>
+          I haven't thought about putting something on my second screen since.
+          I'm completely hooked."
+        </p>
+        <div class="review-footer">
+          <div class="review-avatar">P</div>
+          <div class="review-meta">
+            <div class="review-name">Puetz</div>
+            <div class="review-hrs">72 hrs on record</div>
+          </div>
+          <span class="review-steam">⊞</span>
+        </div>
+        <span class="review-helpful">42 people found this helpful</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="world-map">
   <div class="container">
     <div class="section-header reveal">
@@ -621,7 +1132,7 @@
   <div class="map-container reveal">
     <div class="map-ph">
       <!-- Real in-game map: Qinghe region, Where Winds Meet -->
-      <img src="assets/map.webp" alt="Where Winds Meet — Qinghe Region Map" loading="lazy" class="map-img" width="1400" height="600">
+      <img src="assets/map.webp" alt="Where Winds Meet — Qinghe Region Map" loading="lazy" class="map-img">
       <div class="map-overlay"></div>
 
       <!-- Markers repositioned to match geography visible in the Qinghe screenshot -->
@@ -720,7 +1231,7 @@
     <span class="section-eyebrow reveal" style="display:block;margin-bottom:16px" data-i18n="final_eyebrow">Your Legend Awaits</span>
     <h2 class="section-title reveal" data-i18n="final_title">Enter the World of<br>Where Winds Meet</h2>
     <p class="section-desc reveal" data-i18n="final_desc">One free download. One legendary journey.<br>Ancient China has never felt this alive.</p>
-    <div class="reveal"><a href="https://to.wendiro.com/u?k=9db47141846349488810b469b5a18a32&via=19025" class="cta-primary no-anim" target="_blank" rel="noopener" style="font-size:15px;padding:22px 64px" data-i18n="cta_download">Download Where Winds Meet for Windows<div class="cta-arrow"></div></a></div>
+    <div class="reveal"><a href="https://to.wendiro.com/u?k=9db47141846349488810b469b5a18a32&via=19025" class="cta-primary no-anim" target="_blank" rel="noopener noreferrer" style="font-size:15px;padding:22px 64px" data-i18n="cta_download">▶ Play Free Now — Windows<div class="cta-arrow"></div></a></div>
     <p class="cta-badges reveal" data-i18n="final_badges">Free to Download · Official Installer · Windows 10/11 · Secure & Verified</p>
   </div>
 </section>
@@ -738,31 +1249,33 @@
       <div class="faq-item reveal d2"><div class="faq-q" data-i18n="faq_2_q">Is the download safe?</div><p class="faq-a" data-i18n="faq_2_a">Absolutely. The installer is digitally signed, virus-free, and served from official servers.</p></div>
       <div class="faq-item reveal d3"><div class="faq-q" data-i18n="faq_3_q">What platform is supported?</div><p class="faq-a" data-i18n="faq_3_a">Where Winds Meet runs on Windows PC only (Windows 10 and Windows 11, 64-bit).</p></div>
       <div class="faq-item reveal d4"><div class="faq-q" data-i18n="faq_4_q">Do I need a powerful PC?</div><p class="faq-a" data-i18n="faq_4_a">Most modern mid-range PCs from the last 4 years will run it comfortably at high settings.</p></div>
+      <div class="faq-item reveal d1"><div class="faq-q" data-i18n="faq_5_q">Is it Pay-to-Win?</div><p class="faq-a" data-i18n="faq_5_a">Absolutely not. The gacha system only applies to cosmetic items like outfits — it has zero impact on gameplay, combat power, or story progression. Everything that matters is earned through playing.</p></div>
+      <div class="faq-item reveal d2"><div class="faq-q" data-i18n="faq_6_q">Is it really 100% free?</div><p class="faq-a" data-i18n="faq_6_a">Yes. The full game — every region, every quest, every boss, every story chapter — is completely free. No paywall, no premium tier required to enjoy the full experience.</p></div>
     </div>
     <div style="text-align:center;margin-top:60px" class="reveal">
-      <a href="https://to.wendiro.com/u?k=9db47141846349488810b469b5a18a32&via=19025" class="cta-primary no-anim" target="_blank" rel="noopener" data-i18n="cta_short">Download for Windows<div class="cta-arrow"></div></a>
+      <a href="https://to.wendiro.com/u?k=9db47141846349488810b469b5a18a32&via=19025" class="cta-primary no-anim" target="_blank" rel="noopener noreferrer" data-i18n="cta_short">▶ Play Free Now<div class="cta-arrow"></div></a>
     </div>
   </div>
 </section>
 
-<footer><p>© Where Winds Meet · <span data-i18n="footer_text">All rights reserved · Windows 10/11 · Free Official Download</span></p></footer>
+<footer><p>© 2025 NetEase / Everstone Studio · Where Winds Meet · <span data-i18n="footer_text">All rights reserved · Windows 10/11 · Free Official Download</span></p></footer>
 
 <script>
 // ══════════ TRANSLATIONS ══════════
 const T = {
-  en:{lang_name:"English",nav_gameplay:"Gameplay",nav_abilities:"Abilities",nav_world:"World",nav_system:"System",nav_faq:"FAQ",hero_eyebrow:"An Epic Open World Wuxia RPG",hero_subtitle:"Ancient China. Boundless Skies. One Legendary Path.",hero_tagline:"Become a Sword Saint of the Tang Dynasty",cta_download:"Download Where Winds Meet for Windows",cta_short:"Download for Windows",trust_1:"Free Official Installer",trust_2:"Windows Compatible",trust_3:"Secure Download",scroll_hint:"Scroll to Enter",slider_label:"The World of Where Winds Meet",gameplay_eyebrow:"Live Gameplay",gameplay_title:"Every Moment, a Masterpiece",gameplay_desc:"Fluid combat, breathtaking movement, a living world awaiting your legend.",gameplay_label_1:"Blade Mastery",gameplay_label_2:"Water Walking",gameplay_label_3:"Aerial Combat",gameplay_label_4:"City Exploration",trailer_eyebrow:"Official Gameplay Trailer",trailer_title:"Witness the Legend in Motion",abilities_eyebrow:"Legendary Arts",abilities_title:"Command the Impossible",abilities_desc:"Transcend mortal limits. Master forgotten techniques that defy heaven and earth.",ability_1_title:"Run Across Water",ability_1_desc:"Harness the Ripple Step — a technique so refined that your feet barely graze the surface. Rivers and lakes become pathways.",ability_2_title:"Leap Between Rooftops",ability_2_desc:"The Swallow's Flight technique lets you soar across ancient city skylines. From palace walls to pagoda peaks.",ability_3_title:"Master Legendary Sword Arts",ability_3_desc:"Unlock forbidden sword styles passed through dynasties. Each technique holds the soul of a fallen master, reborn through you.",ability_4_title:"Aerial Martial Arts",ability_4_desc:"Rise above the mortal realm. Chain strikes in mid-air, dodge arrows, and deliver devastating blows from above.",ability_5_title:"Heal or Build — Choose Your Path",ability_5_desc:"Not all legends are forged by the sword. Walk as a physician, or an architect who reshapes the cities of the empire.",ability_6_title:"Inner Vision — Read the Wind",ability_6_desc:"Perceive enemies through walls, read the intention of a strike before it lands, and become one with the living world.",map_eyebrow:"Explore the Empire",map_title:"A Living World to Discover",map_desc:"From northern steppes to southern seas — every region holds ancient secrets.",marker_1:"Yinchuan Pass",marker_1_preview:"NORTHERN PASS",marker_2:"Chang'an",marker_2_preview:"IMPERIAL CAPITAL",marker_3:"Wudang Peaks",marker_3_preview:"WULIN SECT HQ",marker_4:"Yangzhou",marker_4_preview:"ANCIENT PORT",marker_5:"Guangzhou Bay",marker_5_preview:"SOUTHERN COAST",marker_6:"Huashan Cliffs",marker_6_preview:"SACRED MOUNTAINS",sysreq_eyebrow:"System Requirements",sysreq_title:"Is Your Machine Ready?",req_min:"Minimum",req_rec:"Recommended",req_os:"OS",req_cpu:"Processor",req_ram:"Memory",req_gpu:"Graphics",req_hdd:"Storage",howto_eyebrow:"Your Journey Begins",howto_title:"Three Steps to Enter the World",step_1_title:"Download Installer",step_1_desc:"Click the Download button. The official installer is lightweight, fast, and completely free.",step_2_title:"Run Setup",step_2_desc:"Launch the installer and follow the guided steps. The game installs to your chosen drive.",step_3_title:"Enter the World",step_3_desc:"Your legend begins the moment you load in. Ancient China awaits — and the winds are calling.",final_eyebrow:"Your Legend Awaits",final_title:"Enter the World of<br>Where Winds Meet",final_desc:"One free download. One legendary journey.<br>Ancient China has never felt this alive.",final_badges:"Free to Download · Official Installer · Windows 10/11 · Secure & Verified",faq_eyebrow:"Common Questions",faq_title:"Before You Begin",faq_1_q:"Is Where Winds Meet free to play?",faq_1_a:"Yes. The game is available as a free download. The official installer contains the full base game with no upfront purchase required.",faq_2_q:"Is the download safe?",faq_2_a:"Absolutely. The installer is digitally signed, virus-free, and served directly from official servers. No bundled software.",faq_3_q:"What platform is supported?",faq_3_a:"Where Winds Meet runs on Windows PC only (Windows 10 and Windows 11, 64-bit). Console not announced.",faq_4_q:"Do I need a powerful PC?",faq_4_a:"Most modern mid-range gaming PCs from the last 4 years will run it comfortably at high settings.",footer_text:"All rights reserved · Windows 10/11 · Free Official Download"},
+  en:{lang_name:"English",urgency_text:"🔥 <strong>Version 1.4 “Home Afar”</strong> — New content available now · 100% Free",hero_headline:"The Wuxia RPG<br>Everyone Is Playing",hero_reassurance:"✓ No Credit Card &nbsp;·&nbsp; ✓ No Pay-to-Win &nbsp;·&nbsp; ✓ Windows 10/11",hstat_players:"Players",hstat_rating:"Steam Rating",hstat_free_num:"100%",hstat_free:"Free",live_counter_text:"players downloaded in the last hour",nav_gameplay:"Gameplay",nav_abilities:"Abilities",nav_world:"World",nav_system:"System",nav_faq:"FAQ",hero_eyebrow:"Free to Play — Open World Action RPG",hero_subtitle:"Boss Fights. Sword Mastery. Aerial Combat.<br>An Entire Open World — Zero Cost.",hero_tagline:"9M Players · 9/10 Steam · 100% Free",cta_download:"▶ Play Free Now — Windows",cta_short:"▶ Play Free Now",trust_1:"Free Official Installer",trust_2:"Windows Compatible",trust_3:"Secure Download",scroll_hint:"Scroll to Enter",slider_label:"The World of Where Winds Meet",gameplay_eyebrow:"Live Gameplay",gameplay_title:"Every Moment, a Masterpiece",gameplay_desc:"Fluid combat, breathtaking movement, a living world awaiting your legend.",gameplay_label_1:"Blade Mastery",gameplay_label_2:"Water Walking",gameplay_label_3:"Aerial Combat",gameplay_label_4:"City Exploration",trailer_eyebrow:"Official Gameplay Trailer",trailer_title:"Witness the Legend in Motion",abilities_eyebrow:"Legendary Arts",abilities_title:"Command the Impossible",abilities_desc:"Transcend mortal limits. Master forgotten techniques that defy heaven and earth.",ability_1_title:"Run Across Water",ability_1_desc:"Harness the Ripple Step — a technique so refined that your feet barely graze the surface. Rivers and lakes become pathways.",ability_2_title:"Leap Between Rooftops",ability_2_desc:"The Swallow's Flight technique lets you soar across ancient city skylines. From palace walls to pagoda peaks.",ability_3_title:"Master Legendary Sword Arts",ability_3_desc:"Unlock forbidden sword styles passed through dynasties. Each technique holds the soul of a fallen master, reborn through you.",ability_4_title:"Aerial Martial Arts",ability_4_desc:"Rise above the mortal realm. Chain strikes in mid-air, dodge arrows, and deliver devastating blows from above.",ability_5_title:"Heal or Build — Choose Your Path",ability_5_desc:"Not all legends are forged by the sword. Walk as a physician, or an architect who reshapes the cities of the empire.",ability_6_title:"Inner Vision — Read the Wind",ability_6_desc:"Perceive enemies through walls, read the intention of a strike before it lands, and become one with the living world.",map_eyebrow:"Explore the Empire",map_title:"A Living World to Discover",map_desc:"From northern steppes to southern seas — every region holds ancient secrets.",marker_1:"Yinchuan Pass",marker_1_preview:"NORTHERN PASS",marker_2:"Chang'an",marker_2_preview:"IMPERIAL CAPITAL",marker_3:"Wudang Peaks",marker_3_preview:"WULIN SECT HQ",marker_4:"Yangzhou",marker_4_preview:"ANCIENT PORT",marker_5:"Guangzhou Bay",marker_5_preview:"SOUTHERN COAST",marker_6:"Huashan Cliffs",marker_6_preview:"SACRED MOUNTAINS",sysreq_eyebrow:"System Requirements",sysreq_title:"Is Your Machine Ready?",req_min:"Minimum",req_rec:"Recommended",req_os:"OS",req_cpu:"Processor",req_ram:"Memory",req_gpu:"Graphics",req_hdd:"Storage",howto_eyebrow:"Your Journey Begins",howto_title:"Three Steps to Enter the World",step_1_title:"Download Installer",step_1_desc:"Click the Download button. The official installer is lightweight, fast, and completely free.",step_2_title:"Run Setup",step_2_desc:"Launch the installer and follow the guided steps. The game installs to your chosen drive.",step_3_title:"Enter the World",step_3_desc:"Your legend begins the moment you load in. Ancient China awaits — and the winds are calling.",final_eyebrow:"Your Legend Awaits",final_title:"Enter the World of<br>Where Winds Meet",final_desc:"One free download. One legendary journey.<br>Ancient China has never felt this alive.",final_badges:"Free to Download · Official Installer · Windows 10/11 · Secure & Verified",faq_eyebrow:"Common Questions",faq_title:"Before You Begin",faq_1_q:"Is Where Winds Meet free to play?",faq_1_a:"Yes. The game is available as a free download. The official installer contains the full base game with no upfront purchase required.",faq_2_q:"Is the download safe?",faq_2_a:"Absolutely. The installer is digitally signed, virus-free, and served directly from official servers. No bundled software.",faq_3_q:"What platform is supported?",faq_3_a:"Where Winds Meet runs on Windows PC only (Windows 10 and Windows 11, 64-bit). Console not announced.",faq_4_q:"Do I need a powerful PC?",faq_5_q:"Is it Pay-to-Win?",faq_5_a:"Absolutely not. The gacha system only applies to cosmetic items like outfits — zero impact on gameplay, combat power, or story. Everything that matters is earned through playing.",faq_6_q:"Is it really 100% free?",faq_6_a:"Yes. Every region, quest, boss, and story chapter is completely free. No paywall, no premium tier required to enjoy the full experience.",footer_text:"All rights reserved · Windows 10/11 · Free Official Download"},
 
-  fr:{lang_name:"Français",nav_gameplay:"Gameplay",nav_abilities:"Capacités",nav_world:"Monde",nav_system:"Système",nav_faq:"FAQ",hero_eyebrow:"Un RPG Wuxia en Monde Ouvert",hero_subtitle:"Chine Ancienne. Cieux Infinis. Une Voie Légendaire.",hero_tagline:"Devenez un Saint de l'Épée de la Dynastie Tang",cta_download:"Télécharger Where Winds Meet pour Windows",cta_short:"Télécharger pour Windows",trust_1:"Installateur Officiel Gratuit",trust_2:"Compatible Windows",trust_3:"Téléchargement Sécurisé",scroll_hint:"Défiler pour Entrer",slider_label:"Le Monde de Where Winds Meet",gameplay_eyebrow:"Gameplay en Direct",gameplay_title:"Chaque Instant, un Chef-d'Œuvre",gameplay_desc:"Combat fluide, mouvements époustouflants, un monde vivant attend votre légende.",gameplay_label_1:"Maîtrise de la Lame",gameplay_label_2:"Marche sur l'Eau",gameplay_label_3:"Combat Aérien",gameplay_label_4:"Exploration Urbaine",trailer_eyebrow:"Bande-Annonce Officielle",trailer_title:"Contemplez la Légende en Mouvement",abilities_eyebrow:"Arts Légendaires",abilities_title:"Commandez l'Impossible",abilities_desc:"Transcendez les limites mortelles. Maîtrisez des techniques oubliées qui défient le ciel et la terre.",ability_1_title:"Courir sur l'Eau",ability_1_desc:"Maîtrisez le Pas du Frisson — une technique si raffinée que vos pieds effleurent à peine la surface. Les rivières deviennent des voies.",ability_2_title:"Bondir entre les Toits",ability_2_desc:"La technique du Vol de l'Hirondelle vous fait planer sur les toits des cités anciennes.",ability_3_title:"Maîtriser les Arts de l'Épée",ability_3_desc:"Débloquez des styles d'épée interdits transmis à travers les dynasties. Chaque technique porte l'âme d'un maître déchu.",ability_4_title:"Arts Martiaux Aériens",ability_4_desc:"Enchaînez les frappes en l'air, esquivez les flèches et portez des coups dévastateurs depuis les hauteurs.",ability_5_title:"Guérir ou Bâtir — Votre Voie",ability_5_desc:"Les légendes ne naissent pas toutes de l'épée. Soyez médecin ou architecte qui refaçonne les cités de l'empire.",ability_6_title:"Vision Intérieure — Lire le Vent",ability_6_desc:"Percevez les ennemis à travers les murs, lisez leurs intentions et fusionnez avec le monde vivant.",map_eyebrow:"Explorer l'Empire",map_title:"Un Monde Vivant à Découvrir",map_desc:"Des steppes du nord aux mers du sud — chaque région recèle des secrets anciens.",marker_1:"Col de Yinchuan",marker_1_preview:"PASSAGE DU NORD",marker_2:"Chang'an",marker_2_preview:"CAPITALE IMPÉRIALE",marker_3:"Pics de Wudang",marker_3_preview:"QG DE LA SECTE",marker_4:"Yangzhou",marker_4_preview:"PORT ANTIQUE",marker_5:"Baie de Guangzhou",marker_5_preview:"CÔTE SUD",marker_6:"Falaises Huashan",marker_6_preview:"MONTAGNES SACRÉES",sysreq_eyebrow:"Configuration Requise",sysreq_title:"Votre Machine est-elle Prête?",req_min:"Minimum",req_rec:"Recommandée",req_os:"Système",req_cpu:"Processeur",req_ram:"Mémoire",req_gpu:"Carte Graphique",req_hdd:"Stockage",howto_eyebrow:"Votre Voyage Commence",howto_title:"Trois Étapes pour Entrer dans le Monde",step_1_title:"Télécharger l'Installateur",step_1_desc:"Cliquez sur Télécharger. L'installateur officiel est léger, rapide et entièrement gratuit.",step_2_title:"Lancer l'Installation",step_2_desc:"Lancez l'installateur et suivez les étapes. Le jeu s'installe sur le lecteur de votre choix.",step_3_title:"Entrer dans le Monde",step_3_desc:"Votre légende commence dès le chargement. La Chine ancienne vous attend.",final_eyebrow:"Votre Légende Vous Attend",final_title:"Entrez dans le Monde de<br>Where Winds Meet",final_desc:"Un téléchargement gratuit. Un voyage légendaire.<br>La Chine ancienne comme jamais.",final_badges:"Gratuit · Installateur Officiel · Windows 10/11 · Sécurisé",faq_eyebrow:"Questions Fréquentes",faq_title:"Avant de Commencer",faq_1_q:"Where Winds Meet est-il gratuit?",faq_1_a:"Oui. Le jeu est disponible en téléchargement gratuit. L'installateur officiel contient le jeu de base complet.",faq_2_q:"Le téléchargement est-il sûr?",faq_2_a:"Absolument. L'installateur est signé numériquement, sans virus, servi depuis les serveurs officiels.",faq_3_q:"Quelle plateforme est supportée?",faq_3_a:"Where Winds Meet fonctionne uniquement sur Windows PC (Windows 10 et 11, 64 bits).",faq_4_q:"Faut-il un PC puissant?",faq_4_a:"La plupart des PC de milieu de gamme des 4 dernières années feront tourner le jeu confortablement.",footer_text:"Tous droits réservés · Windows 10/11 · Téléchargement Officiel Gratuit"},
+  fr:{lang_name:"Français",urgency_text:"🔥 <strong>Version 1.4 “Home Afar”</strong> — Nouveau contenu disponible maintenant · 100% Gratuit",hero_headline:"Le RPG Wuxia que tout le monde télécharge",hero_reassurance:"✓ Aucune carte bancaire &nbsp;·&nbsp; ✓ Jamais Pay-to-Win &nbsp;·&nbsp; ✓ Windows 10/11",hstat_players:"Joueurs",hstat_rating:"Note Steam",hstat_free_num:"100%",hstat_free:"Gratuit",live_counter_text:"joueurs ont téléchargé dans la dernière heure",nav_gameplay:"Gameplay",nav_abilities:"Capacités",nav_world:"Monde",nav_system:"Système",nav_faq:"FAQ",hero_eyebrow:"Gratuit — RPG Action en Monde Ouvert",hero_subtitle:"Boss Épiques. Maîtrise de l'Épée. Combat Aérien.<br>Tout un Monde Ouvert — 100% Gratuit.",hero_tagline:"9M joueurs · 87% avis positifs Steam · Gratuit",cta_download:"▶ Jouer Gratuitement — Windows",cta_short:"▶ Jouer Gratuitement",trust_1:"Installateur Officiel Gratuit",trust_2:"Compatible Windows",trust_3:"Téléchargement Sécurisé",scroll_hint:"Défiler pour Entrer",slider_label:"Le Monde de Where Winds Meet",gameplay_eyebrow:"Gameplay en Direct",gameplay_title:"Chaque Instant, un Chef-d'Œuvre",gameplay_desc:"Combat fluide, mouvements époustouflants, un monde vivant attend votre légende.",gameplay_label_1:"Maîtrise de la Lame",gameplay_label_2:"Marche sur l'Eau",gameplay_label_3:"Combat Aérien",gameplay_label_4:"Exploration Urbaine",trailer_eyebrow:"Bande-Annonce Officielle",trailer_title:"Contemplez la Légende en Mouvement",abilities_eyebrow:"Arts Légendaires",abilities_title:"Commandez l'Impossible",abilities_desc:"Transcendez les limites mortelles. Maîtrisez des techniques oubliées qui défient le ciel et la terre.",ability_1_title:"Courir sur l'Eau",ability_1_desc:"Maîtrisez le Pas du Frisson — une technique si raffinée que vos pieds effleurent à peine la surface. Les rivières deviennent des voies.",ability_2_title:"Bondir entre les Toits",ability_2_desc:"La technique du Vol de l'Hirondelle vous fait planer sur les toits des cités anciennes.",ability_3_title:"Maîtriser les Arts de l'Épée",ability_3_desc:"Débloquez des styles d'épée interdits transmis à travers les dynasties. Chaque technique porte l'âme d'un maître déchu.",ability_4_title:"Arts Martiaux Aériens",ability_4_desc:"Enchaînez les frappes en l'air, esquivez les flèches et portez des coups dévastateurs depuis les hauteurs.",ability_5_title:"Guérir ou Bâtir — Votre Voie",ability_5_desc:"Les légendes ne naissent pas toutes de l'épée. Soyez médecin ou architecte qui refaçonne les cités de l'empire.",ability_6_title:"Vision Intérieure — Lire le Vent",ability_6_desc:"Percevez les ennemis à travers les murs, lisez leurs intentions et fusionnez avec le monde vivant.",map_eyebrow:"Explorer l'Empire",map_title:"Un Monde Vivant à Découvrir",map_desc:"Des steppes du nord aux mers du sud — chaque région recèle des secrets anciens.",marker_1:"Col de Yinchuan",marker_1_preview:"PASSAGE DU NORD",marker_2:"Chang'an",marker_2_preview:"CAPITALE IMPÉRIALE",marker_3:"Pics de Wudang",marker_3_preview:"QG DE LA SECTE",marker_4:"Yangzhou",marker_4_preview:"PORT ANTIQUE",marker_5:"Baie de Guangzhou",marker_5_preview:"CÔTE SUD",marker_6:"Falaises Huashan",marker_6_preview:"MONTAGNES SACRÉES",sysreq_eyebrow:"Configuration Requise",sysreq_title:"Votre Machine est-elle Prête?",req_min:"Minimum",req_rec:"Recommandée",req_os:"Système",req_cpu:"Processeur",req_ram:"Mémoire",req_gpu:"Carte Graphique",req_hdd:"Stockage",howto_eyebrow:"Votre Voyage Commence",howto_title:"Trois Étapes pour Entrer dans le Monde",step_1_title:"Télécharger l'Installateur",step_1_desc:"Cliquez sur Télécharger. L'installateur officiel est léger, rapide et entièrement gratuit.",step_2_title:"Lancer l'Installation",step_2_desc:"Lancez l'installateur et suivez les étapes. Le jeu s'installe sur le lecteur de votre choix.",step_3_title:"Entrer dans le Monde",step_3_desc:"Votre légende commence dès le chargement. La Chine ancienne vous attend.",final_eyebrow:"Votre Légende Vous Attend",final_title:"Entrez dans le Monde de<br>Where Winds Meet",final_desc:"Un téléchargement gratuit. Un voyage légendaire.<br>La Chine ancienne comme jamais.",final_badges:"Gratuit · Installateur Officiel · Windows 10/11 · Sécurisé",faq_eyebrow:"Questions Fréquentes",faq_title:"Avant de Commencer",faq_1_q:"Where Winds Meet est-il gratuit?",faq_1_a:"Oui. Le jeu est disponible en téléchargement gratuit. L'installateur officiel contient le jeu de base complet.",faq_2_q:"Le téléchargement est-il sûr?",faq_2_a:"Absolument. L'installateur est signé numériquement, sans virus, servi depuis les serveurs officiels.",faq_3_q:"Quelle plateforme est supportée?",faq_3_a:"Where Winds Meet fonctionne uniquement sur Windows PC (Windows 10 et 11, 64 bits).",faq_4_q:"Faut-il un PC puissant?",faq_5_q:"Est-ce Pay-to-Win?",faq_5_a:"Absolument pas. Le système gacha ne concerne que les cosmétiques — aucun impact sur le gameplay, la puissance de combat ou l'histoire. Tout ce qui compte se gagne en jouant.",faq_6_q:"Est-ce vraiment 100% gratuit?",faq_6_a:"Oui. Chaque région, quête, boss et chapitre est entièrement gratuit. Aucun paywall, aucun abonnement premium requis.",footer_text:"Tous droits réservés · Windows 10/11 · Téléchargement Officiel Gratuit"},
 
-  es:{lang_name:"Español",nav_gameplay:"Jugabilidad",nav_abilities:"Habilidades",nav_world:"Mundo",nav_system:"Sistema",nav_faq:"FAQ",hero_eyebrow:"Un RPG de Mundo Abierto Wuxia",hero_subtitle:"China Antigua. Cielos Infinitos. Un Camino Legendario.",hero_tagline:"Conviértete en un Santo de la Espada de la Dinastía Tang",cta_download:"Descargar Where Winds Meet para Windows",cta_short:"Descargar para Windows",trust_1:"Instalador Oficial Gratuito",trust_2:"Compatible con Windows",trust_3:"Descarga Segura",scroll_hint:"Desplázate para Entrar",slider_label:"El Mundo de Where Winds Meet",gameplay_eyebrow:"Gameplay en Vivo",gameplay_title:"Cada Momento, una Obra Maestra",gameplay_desc:"Combate fluido, movimiento impresionante, un mundo vivo que espera tu leyenda.",gameplay_label_1:"Maestría con la Espada",gameplay_label_2:"Caminar sobre el Agua",gameplay_label_3:"Combate Aéreo",gameplay_label_4:"Exploración Urbana",trailer_eyebrow:"Tráiler Oficial de Gameplay",trailer_title:"Sé Testigo de la Leyenda en Movimiento",abilities_eyebrow:"Artes Legendarias",abilities_title:"Domina lo Imposible",abilities_desc:"Trasciende los límites mortales. Domina técnicas olvidadas que desafían el cielo y la tierra.",ability_1_title:"Correr sobre el Agua",ability_1_desc:"Domina el Paso de la Onda — una técnica tan refinada que tus pies apenas rozan la superficie.",ability_2_title:"Saltar entre Tejados",ability_2_desc:"La técnica del Vuelo de la Golondrina te permite planear sobre los tejados de ciudades antiguas.",ability_3_title:"Dominar las Artes de la Espada",ability_3_desc:"Desbloquea estilos de espada prohibidos transmitidos por dinastías. Cada técnica lleva el alma de un maestro caído.",ability_4_title:"Artes Marciales Aéreas",ability_4_desc:"Encadena golpes en el aire, esquiva flechas y propina ataques devastadores desde las alturas.",ability_5_title:"Sanar o Construir — Tu Camino",ability_5_desc:"No todas las leyendas nacen de la espada. Sé médico o arquitecto que moldea las ciudades del imperio.",ability_6_title:"Visión Interior — Leer el Viento",ability_6_desc:"Percibe enemigos a través de muros, lee la intención de un golpe antes de que llegue.",map_eyebrow:"Explora el Imperio",map_title:"Un Mundo Vivo por Descubrir",map_desc:"Desde las estepas del norte hasta los mares del sur — cada región guarda secretos ancestrales.",marker_1:"Paso de Yinchuan",marker_1_preview:"PASO DEL NORTE",marker_2:"Chang'an",marker_2_preview:"CAPITAL IMPERIAL",marker_3:"Picos de Wudang",marker_3_preview:"SEDE DE LA SECTA",marker_4:"Yangzhou",marker_4_preview:"PUERTO ANTIGUO",marker_5:"Bahía de Guangzhou",marker_5_preview:"COSTA SUR",marker_6:"Acantilados Huashan",marker_6_preview:"MONTAÑAS SAGRADAS",sysreq_eyebrow:"Requisitos del Sistema",sysreq_title:"¿Tu Máquina está Lista?",req_min:"Mínimos",req_rec:"Recomendados",req_os:"Sistema",req_cpu:"Procesador",req_ram:"Memoria",req_gpu:"Gráficos",req_hdd:"Almacenamiento",howto_eyebrow:"Tu Viaje Comienza",howto_title:"Tres Pasos para Entrar al Mundo",step_1_title:"Descargar Instalador",step_1_desc:"Haz clic en Descargar. El instalador oficial es ligero, rápido y completamente gratuito.",step_2_title:"Ejecutar Instalación",step_2_desc:"Inicia el instalador y sigue los pasos. El juego se instala en la unidad que elijas.",step_3_title:"Entrar al Mundo",step_3_desc:"Tu leyenda comienza en el momento en que cargas. La China antigua te espera.",final_eyebrow:"Tu Leyenda Te Espera",final_title:"Entra al Mundo de<br>Where Winds Meet",final_desc:"Una descarga gratuita. Un viaje legendario.<br>China antigua como nunca antes.",final_badges:"Gratuito · Instalador Oficial · Windows 10/11 · Verificado y Seguro",faq_eyebrow:"Preguntas Frecuentes",faq_title:"Antes de Comenzar",faq_1_q:"¿Where Winds Meet es gratuito?",faq_1_a:"Sí. El juego está disponible como descarga gratuita. El instalador oficial contiene el juego base completo.",faq_2_q:"¿Es segura la descarga?",faq_2_a:"Absolutamente. El instalador está firmado digitalmente, libre de virus, desde servidores oficiales.",faq_3_q:"¿Qué plataformas son compatibles?",faq_3_a:"Where Winds Meet funciona solo en Windows PC (Windows 10 y 11, 64 bits).",faq_4_q:"¿Necesito un PC potente?",faq_4_a:"La mayoría de los PCs de gama media de los últimos 4 años lo ejecutarán cómodamente.",footer_text:"Todos los derechos reservados · Windows 10/11 · Descarga Oficial Gratuita"},
+  es:{lang_name:"Español",urgency_text:"🔥 <strong>Versión 1.4 “Home Afar”</strong> — Nuevo contenido disponible ahora · 100% Gratis",hero_headline:"El RPG Wuxia que todos están jugando",hero_reassurance:"✓ Sin tarjeta de crédito &nbsp;·&nbsp; ✓ Nunca Pay-to-Win &nbsp;·&nbsp; ✓ Windows 10/11",hstat_players:"Jugadores",hstat_rating:"Valoración Steam",hstat_free_num:"100%",hstat_free:"Gratis",live_counter_text:"jugadores descargaron en la última hora",nav_gameplay:"Jugabilidad",nav_abilities:"Habilidades",nav_world:"Mundo",nav_system:"Sistema",nav_faq:"FAQ",hero_eyebrow:"Gratis — RPG de Acción en Mundo Abierto",hero_subtitle:"Jefes Épicos. Maestría con la Espada. Combate Aéreo.<br>Un Mundo Abierto Entero — Costo Cero.",hero_tagline:"9M jugadores · 9/10 Steam · 100% Gratis",cta_download:"▶ Jugar Gratis Ahora — Windows",cta_short:"▶ Jugar Gratis Ahora",trust_1:"Instalador Oficial Gratuito",trust_2:"Compatible con Windows",trust_3:"Descarga Segura",scroll_hint:"Desplázate para Entrar",slider_label:"El Mundo de Where Winds Meet",gameplay_eyebrow:"Gameplay en Vivo",gameplay_title:"Cada Momento, una Obra Maestra",gameplay_desc:"Combate fluido, movimiento impresionante, un mundo vivo que espera tu leyenda.",gameplay_label_1:"Maestría con la Espada",gameplay_label_2:"Caminar sobre el Agua",gameplay_label_3:"Combate Aéreo",gameplay_label_4:"Exploración Urbana",trailer_eyebrow:"Tráiler Oficial de Gameplay",trailer_title:"Sé Testigo de la Leyenda en Movimiento",abilities_eyebrow:"Artes Legendarias",abilities_title:"Domina lo Imposible",abilities_desc:"Trasciende los límites mortales. Domina técnicas olvidadas que desafían el cielo y la tierra.",ability_1_title:"Correr sobre el Agua",ability_1_desc:"Domina el Paso de la Onda — una técnica tan refinada que tus pies apenas rozan la superficie.",ability_2_title:"Saltar entre Tejados",ability_2_desc:"La técnica del Vuelo de la Golondrina te permite planear sobre los tejados de ciudades antiguas.",ability_3_title:"Dominar las Artes de la Espada",ability_3_desc:"Desbloquea estilos de espada prohibidos transmitidos por dinastías. Cada técnica lleva el alma de un maestro caído.",ability_4_title:"Artes Marciales Aéreas",ability_4_desc:"Encadena golpes en el aire, esquiva flechas y propina ataques devastadores desde las alturas.",ability_5_title:"Sanar o Construir — Tu Camino",ability_5_desc:"No todas las leyendas nacen de la espada. Sé médico o arquitecto que moldea las ciudades del imperio.",ability_6_title:"Visión Interior — Leer el Viento",ability_6_desc:"Percibe enemigos a través de muros, lee la intención de un golpe antes de que llegue.",map_eyebrow:"Explora el Imperio",map_title:"Un Mundo Vivo por Descubrir",map_desc:"Desde las estepas del norte hasta los mares del sur — cada región guarda secretos ancestrales.",marker_1:"Paso de Yinchuan",marker_1_preview:"PASO DEL NORTE",marker_2:"Chang'an",marker_2_preview:"CAPITAL IMPERIAL",marker_3:"Picos de Wudang",marker_3_preview:"SEDE DE LA SECTA",marker_4:"Yangzhou",marker_4_preview:"PUERTO ANTIGUO",marker_5:"Bahía de Guangzhou",marker_5_preview:"COSTA SUR",marker_6:"Acantilados Huashan",marker_6_preview:"MONTAÑAS SAGRADAS",sysreq_eyebrow:"Requisitos del Sistema",sysreq_title:"¿Tu Máquina está Lista?",req_min:"Mínimos",req_rec:"Recomendados",req_os:"Sistema",req_cpu:"Procesador",req_ram:"Memoria",req_gpu:"Gráficos",req_hdd:"Almacenamiento",howto_eyebrow:"Tu Viaje Comienza",howto_title:"Tres Pasos para Entrar al Mundo",step_1_title:"Descargar Instalador",step_1_desc:"Haz clic en Descargar. El instalador oficial es ligero, rápido y completamente gratuito.",step_2_title:"Ejecutar Instalación",step_2_desc:"Inicia el instalador y sigue los pasos. El juego se instala en la unidad que elijas.",step_3_title:"Entrar al Mundo",step_3_desc:"Tu leyenda comienza en el momento en que cargas. La China antigua te espera.",final_eyebrow:"Tu Leyenda Te Espera",final_title:"Entra al Mundo de<br>Where Winds Meet",final_desc:"Una descarga gratuita. Un viaje legendario.<br>China antigua como nunca antes.",final_badges:"Gratuito · Instalador Oficial · Windows 10/11 · Verificado y Seguro",faq_eyebrow:"Preguntas Frecuentes",faq_title:"Antes de Comenzar",faq_1_q:"¿Where Winds Meet es gratuito?",faq_1_a:"Sí. El juego está disponible como descarga gratuita. El instalador oficial contiene el juego base completo.",faq_2_q:"¿Es segura la descarga?",faq_2_a:"Absolutamente. El instalador está firmado digitalmente, libre de virus, desde servidores oficiales.",faq_3_q:"¿Qué plataformas son compatibles?",faq_3_a:"Where Winds Meet funciona solo en Windows PC (Windows 10 y 11, 64 bits).",faq_4_q:"¿Necesito un PC potente?",faq_5_q:"¿Es Pay-to-Win?",faq_5_a:"En absoluto. El sistema gacha solo aplica a cosméticos — cero impacto en el gameplay, el poder de combate o la historia. Todo lo importante se gana jugando.",faq_6_q:"¿Es realmente 100% gratis?",faq_6_a:"Sí. Cada región, misión, jefe y capítulo es completamente gratis. Sin muros de pago, sin nivel premium requerido.",footer_text:"Todos los derechos reservados · Windows 10/11 · Descarga Oficial Gratuita"},
 
-  de:{lang_name:"Deutsch",nav_gameplay:"Gameplay",nav_abilities:"Fähigkeiten",nav_world:"Welt",nav_system:"System",nav_faq:"FAQ",hero_eyebrow:"Ein Episches Open-World Wuxia RPG",hero_subtitle:"Altes China. Grenzenlose Himmel. Ein Legendärer Weg.",hero_tagline:"Werde ein Schwertheiliger der Tang-Dynastie",cta_download:"Where Winds Meet für Windows Herunterladen",cta_short:"Für Windows Herunterladen",trust_1:"Kostenloser offizieller Installer",trust_2:"Windows-kompatibel",trust_3:"Sicherer Download",scroll_hint:"Scrollen zum Eintreten",slider_label:"Die Welt von Where Winds Meet",gameplay_eyebrow:"Live-Gameplay",gameplay_title:"Jeder Moment ein Meisterwerk",gameplay_desc:"Flüssiger Kampf, atemberaubende Bewegung, eine lebendige Welt erwartet deine Legende.",gameplay_label_1:"Klingenmeisterschaft",gameplay_label_2:"Wasserlauf",gameplay_label_3:"Luftkampf",gameplay_label_4:"Stadterkundung",trailer_eyebrow:"Offizieller Gameplay-Trailer",trailer_title:"Erlebe die Legende in Bewegung",abilities_eyebrow:"Legendäre Künste",abilities_title:"Beherrsche das Unmögliche",abilities_desc:"Überschreite sterbliche Grenzen. Meistere vergessene Techniken, die Himmel und Erde trotzen.",ability_1_title:"Über Wasser Laufen",ability_1_desc:"Beherrsche den Wellenschritt — eine Technik so verfeinert, dass deine Füße die Oberfläche kaum berühren.",ability_2_title:"Zwischen Dächern Springen",ability_2_desc:"Die Schwalbenflug-Technik lässt dich über antike Stadtsilhouetten gleiten.",ability_3_title:"Legendäre Schwertkünste Meistern",ability_3_desc:"Schalte verbotene Schwertsstile frei, die durch Dynastien weitergegeben wurden.",ability_4_title:"Luftkampfkünste",ability_4_desc:"Steige über das Sterbliche hinaus. Verkette Schläge in der Luft und liefere vernichtende Treffer.",ability_5_title:"Heilen oder Bauen — Dein Weg",ability_5_desc:"Nicht alle Legenden entstehen durch das Schwert. Sei Arzt oder Architekt des Reiches.",ability_6_title:"Innere Vision — Den Wind Lesen",ability_6_desc:"Nehme Feinde durch Wände wahr und lese die Absicht eines Schlages bevor er landet.",map_eyebrow:"Das Reich Erkunden",map_title:"Eine Lebendige Welt zu Entdecken",map_desc:"Von den Steppen im Norden bis zu den Meeren im Süden — jede Region birgt alte Geheimnisse.",marker_1:"Yinchuan-Pass",marker_1_preview:"NORDPASS",marker_2:"Chang'an",marker_2_preview:"KAISERLICHE HAUPTSTADT",marker_3:"Wudang-Gipfel",marker_3_preview:"SEKTENZENTRALE",marker_4:"Yangzhou",marker_4_preview:"ALTER HAFEN",marker_5:"Guangzhou-Bucht",marker_5_preview:"SÜDKÜSTE",marker_6:"Huashan-Klippen",marker_6_preview:"HEILIGE BERGE",sysreq_eyebrow:"Systemanforderungen",sysreq_title:"Ist Dein PC Bereit?",req_min:"Minimum",req_rec:"Empfohlen",req_os:"Betriebssystem",req_cpu:"Prozessor",req_ram:"Arbeitsspeicher",req_gpu:"Grafik",req_hdd:"Speicher",howto_eyebrow:"Deine Reise Beginnt",howto_title:"Drei Schritte in die Welt",step_1_title:"Installer Herunterladen",step_1_desc:"Klicke auf Herunterladen. Der offizielle Installer ist klein, schnell und völlig kostenlos.",step_2_title:"Setup Ausführen",step_2_desc:"Starte den Installer und folge den Schritten. Das Spiel wird auf dem gewünschten Laufwerk installiert.",step_3_title:"Die Welt Betreten",step_3_desc:"Deine Legende beginnt in dem Moment, in dem du lädst. Das alte China wartet auf dich.",final_eyebrow:"Deine Legende Wartet",final_title:"Betritt die Welt von<br>Where Winds Meet",final_desc:"Ein kostenloser Download. Eine legendäre Reise.<br>Altes China wie nie zuvor.",final_badges:"Kostenlos · Offizieller Installer · Windows 10/11 · Sicher & Geprüft",faq_eyebrow:"Häufige Fragen",faq_title:"Bevor Du Beginnst",faq_1_q:"Ist Where Winds Meet kostenlos?",faq_1_a:"Ja. Das Spiel ist als kostenloser Download verfügbar. Der offizielle Installer enthält das vollständige Basisspiel.",faq_2_q:"Ist der Download sicher?",faq_2_a:"Absolut. Der Installer ist digital signiert, virenfrei und wird von offiziellen Servern bereitgestellt.",faq_3_q:"Welche Plattformen werden unterstützt?",faq_3_a:"Where Winds Meet läuft nur auf Windows PC (Windows 10 und 11, 64-Bit).",faq_4_q:"Brauche ich einen leistungsstarken PC?",faq_4_a:"Die meisten modernen Mittelklasse-PCs der letzten 4 Jahre werden es problemlos ausführen.",footer_text:"Alle Rechte vorbehalten · Windows 10/11 · Kostenloser offizieller Download"},
+  de:{lang_name:"Deutsch",urgency_text:"🔥 <strong>Version 1.4 “Home Afar”</strong> — Neue Inhalte jetzt verfügbar · 100% Kostenlos",hero_headline:"Das Wuxia RPG, das alle spielen",hero_reassurance:"✓ Keine Kreditkarte &nbsp;·&nbsp; ✓ Kein Pay-to-Win &nbsp;·&nbsp; ✓ Windows 10/11",hstat_players:"Spieler",hstat_rating:"Steam Wertung",hstat_free_num:"100%",hstat_free:"Kostenlos",live_counter_text:"Spieler haben in der letzten Stunde heruntergeladen",nav_gameplay:"Gameplay",nav_abilities:"Fähigkeiten",nav_world:"Welt",nav_system:"System",nav_faq:"FAQ",hero_eyebrow:"Kostenlos — Open-World Action RPG",hero_subtitle:"Epische Bosskämpfe. Schwertkünste. Luftkampf.<br>Eine ganze offene Welt — komplett kostenlos.",hero_tagline:"9M Spieler · 9/10 Steam · 100% Kostenlos",cta_download:"▶ Jetzt Kostenlos Spielen — Windows",cta_short:"▶ Jetzt Kostenlos Spielen",trust_1:"Kostenloser offizieller Installer",trust_2:"Windows-kompatibel",trust_3:"Sicherer Download",scroll_hint:"Scrollen zum Eintreten",slider_label:"Die Welt von Where Winds Meet",gameplay_eyebrow:"Live-Gameplay",gameplay_title:"Jeder Moment ein Meisterwerk",gameplay_desc:"Flüssiger Kampf, atemberaubende Bewegung, eine lebendige Welt erwartet deine Legende.",gameplay_label_1:"Klingenmeisterschaft",gameplay_label_2:"Wasserlauf",gameplay_label_3:"Luftkampf",gameplay_label_4:"Stadterkundung",trailer_eyebrow:"Offizieller Gameplay-Trailer",trailer_title:"Erlebe die Legende in Bewegung",abilities_eyebrow:"Legendäre Künste",abilities_title:"Beherrsche das Unmögliche",abilities_desc:"Überschreite sterbliche Grenzen. Meistere vergessene Techniken, die Himmel und Erde trotzen.",ability_1_title:"Über Wasser Laufen",ability_1_desc:"Beherrsche den Wellenschritt — eine Technik so verfeinert, dass deine Füße die Oberfläche kaum berühren.",ability_2_title:"Zwischen Dächern Springen",ability_2_desc:"Die Schwalbenflug-Technik lässt dich über antike Stadtsilhouetten gleiten.",ability_3_title:"Legendäre Schwertkünste Meistern",ability_3_desc:"Schalte verbotene Schwertsstile frei, die durch Dynastien weitergegeben wurden.",ability_4_title:"Luftkampfkünste",ability_4_desc:"Steige über das Sterbliche hinaus. Verkette Schläge in der Luft und liefere vernichtende Treffer.",ability_5_title:"Heilen oder Bauen — Dein Weg",ability_5_desc:"Nicht alle Legenden entstehen durch das Schwert. Sei Arzt oder Architekt des Reiches.",ability_6_title:"Innere Vision — Den Wind Lesen",ability_6_desc:"Nehme Feinde durch Wände wahr und lese die Absicht eines Schlages bevor er landet.",map_eyebrow:"Das Reich Erkunden",map_title:"Eine Lebendige Welt zu Entdecken",map_desc:"Von den Steppen im Norden bis zu den Meeren im Süden — jede Region birgt alte Geheimnisse.",marker_1:"Yinchuan-Pass",marker_1_preview:"NORDPASS",marker_2:"Chang'an",marker_2_preview:"KAISERLICHE HAUPTSTADT",marker_3:"Wudang-Gipfel",marker_3_preview:"SEKTENZENTRALE",marker_4:"Yangzhou",marker_4_preview:"ALTER HAFEN",marker_5:"Guangzhou-Bucht",marker_5_preview:"SÜDKÜSTE",marker_6:"Huashan-Klippen",marker_6_preview:"HEILIGE BERGE",sysreq_eyebrow:"Systemanforderungen",sysreq_title:"Ist Dein PC Bereit?",req_min:"Minimum",req_rec:"Empfohlen",req_os:"Betriebssystem",req_cpu:"Prozessor",req_ram:"Arbeitsspeicher",req_gpu:"Grafik",req_hdd:"Speicher",howto_eyebrow:"Deine Reise Beginnt",howto_title:"Drei Schritte in die Welt",step_1_title:"Installer Herunterladen",step_1_desc:"Klicke auf Herunterladen. Der offizielle Installer ist klein, schnell und völlig kostenlos.",step_2_title:"Setup Ausführen",step_2_desc:"Starte den Installer und folge den Schritten. Das Spiel wird auf dem gewünschten Laufwerk installiert.",step_3_title:"Die Welt Betreten",step_3_desc:"Deine Legende beginnt in dem Moment, in dem du lädst. Das alte China wartet auf dich.",final_eyebrow:"Deine Legende Wartet",final_title:"Betritt die Welt von<br>Where Winds Meet",final_desc:"Ein kostenloser Download. Eine legendäre Reise.<br>Altes China wie nie zuvor.",final_badges:"Kostenlos · Offizieller Installer · Windows 10/11 · Sicher & Geprüft",faq_eyebrow:"Häufige Fragen",faq_title:"Bevor Du Beginnst",faq_1_q:"Ist Where Winds Meet kostenlos?",faq_1_a:"Ja. Das Spiel ist als kostenloser Download verfügbar. Der offizielle Installer enthält das vollständige Basisspiel.",faq_2_q:"Ist der Download sicher?",faq_2_a:"Absolut. Der Installer ist digital signiert, virenfrei und wird von offiziellen Servern bereitgestellt.",faq_3_q:"Welche Plattformen werden unterstützt?",faq_3_a:"Where Winds Meet läuft nur auf Windows PC (Windows 10 und 11, 64-Bit).",faq_4_q:"Brauche ich einen leistungsstarken PC?",faq_5_q:"Ist es Pay-to-Win?",faq_5_a:"Absolut nicht. Das Gacha-System betrifft nur Kosmetika — kein Einfluss auf Gameplay, Kampfkraft oder Geschichte. Alles Wichtige wird durch Spielen verdient.",faq_6_q:"Ist es wirklich 100% kostenlos?",faq_6_a:"Ja. Jede Region, Quest, Boss und Kapitel ist völlig kostenlos. Keine Bezahlschranken, keine Premium-Stufe erforderlich.",footer_text:"Alle Rechte vorbehalten · Windows 10/11 · Kostenloser offizieller Download"},
 
-  pt:{lang_name:"Português",nav_gameplay:"Gameplay",nav_abilities:"Habilidades",nav_world:"Mundo",nav_system:"Sistema",nav_faq:"FAQ",hero_eyebrow:"Um RPG Wuxia de Mundo Aberto",hero_subtitle:"China Antiga. Céus Infinitos. Um Caminho Lendário.",hero_tagline:"Torne-se um Santo da Espada da Dinastia Tang",cta_download:"Baixar Where Winds Meet para Windows",cta_short:"Baixar para Windows",trust_1:"Instalador Oficial Gratuito",trust_2:"Compatível com Windows",trust_3:"Download Seguro",scroll_hint:"Role para Entrar",slider_label:"O Mundo de Where Winds Meet",gameplay_eyebrow:"Gameplay ao Vivo",gameplay_title:"Cada Momento, uma Obra-Prima",gameplay_desc:"Combate fluido, movimento deslumbrante, um mundo vivo aguardando sua lenda.",gameplay_label_1:"Maestria com a Lâmina",gameplay_label_2:"Caminhar sobre a Água",gameplay_label_3:"Combate Aéreo",gameplay_label_4:"Exploração Urbana",trailer_eyebrow:"Trailer Oficial de Gameplay",trailer_title:"Testemunhe a Lenda em Movimento",abilities_eyebrow:"Artes Lendárias",abilities_title:"Comande o Impossível",abilities_desc:"Transcenda os limites mortais. Domine técnicas esquecidas que desafiam o céu e a terra.",ability_1_title:"Correr sobre a Água",ability_1_desc:"Domine o Passo da Onda — uma técnica tão refinada que seus pés mal tocam a superfície.",ability_2_title:"Saltar entre Telhados",ability_2_desc:"A técnica do Voo da Andorinha permite planar pelos horizontes de cidades antigas.",ability_3_title:"Dominar as Artes da Espada",ability_3_desc:"Desbloqueie estilos proibidos de espada transmitidos por dinastias.",ability_4_title:"Artes Marciais Aéreas",ability_4_desc:"Encadeie golpes no ar, esquive de flechas e desfeche ataques devastadores das alturas.",ability_5_title:"Curar ou Construir — Seu Caminho",ability_5_desc:"Nem todas as lendas nascem da espada. Seja médico ou arquiteto que molda as cidades do império.",ability_6_title:"Visão Interior — Ler o Vento",ability_6_desc:"Perceba inimigos através de paredes, leia a intenção de um golpe antes que chegue.",map_eyebrow:"Explorar o Império",map_title:"Um Mundo Vivo para Descobrir",map_desc:"Das estepes do norte aos mares do sul — cada região guarda segredos ancestrais.",marker_1:"Passo de Yinchuan",marker_1_preview:"PASSO DO NORTE",marker_2:"Chang'an",marker_2_preview:"CAPITAL IMPERIAL",marker_3:"Picos de Wudang",marker_3_preview:"QUARTEL-GENERAL",marker_4:"Yangzhou",marker_4_preview:"PORTO ANTIGO",marker_5:"Baía de Guangzhou",marker_5_preview:"COSTA SUL",marker_6:"Penhascos Huashan",marker_6_preview:"MONTANHAS SAGRADAS",sysreq_eyebrow:"Requisitos do Sistema",sysreq_title:"Sua Máquina está Pronta?",req_min:"Mínimo",req_rec:"Recomendado",req_os:"Sistema",req_cpu:"Processador",req_ram:"Memória",req_gpu:"Placa de Vídeo",req_hdd:"Armazenamento",howto_eyebrow:"Sua Jornada Começa",howto_title:"Três Passos para Entrar no Mundo",step_1_title:"Baixar Instalador",step_1_desc:"Clique em Baixar. O instalador oficial é leve, rápido e completamente gratuito.",step_2_title:"Executar Instalação",step_2_desc:"Inicie o instalador e siga as etapas. O jogo se instala no drive escolhido.",step_3_title:"Entrar no Mundo",step_3_desc:"Sua lenda começa no momento em que você carrega. A China antiga aguarda.",final_eyebrow:"Sua Lenda Aguarda",final_title:"Entre no Mundo de<br>Where Winds Meet",final_desc:"Um download gratuito. Uma jornada lendária.<br>A China antiga como nunca antes.",final_badges:"Gratuito · Instalador Oficial · Windows 10/11 · Seguro e Verificado",faq_eyebrow:"Perguntas Frequentes",faq_title:"Antes de Começar",faq_1_q:"Where Winds Meet é gratuito?",faq_1_a:"Sim. O jogo está disponível como download gratuito. O instalador oficial contém o jogo base completo.",faq_2_q:"O download é seguro?",faq_2_a:"Absolutamente. O instalador é assinado digitalmente, livre de vírus, servido de servidores oficiais.",faq_3_q:"Qual plataforma é suportada?",faq_3_a:"Where Winds Meet funciona apenas em Windows PC (Windows 10 e 11, 64 bits).",faq_4_q:"Preciso de um PC potente?",faq_4_a:"A maioria dos PCs de médio porte dos últimos 4 anos executará bem em configurações altas.",footer_text:"Todos os direitos reservados · Windows 10/11 · Download Oficial Gratuito"},
+  pt:{lang_name:"Português",urgency_text:"🔥 <strong>Versão 1.4 “Home Afar”</strong> — Novo conteúdo disponível agora · 100% Grátis",hero_headline:"O RPG Wuxia que todo mundo está jogando",hero_reassurance:"✓ Sem cartão de crédito &nbsp;·&nbsp; ✓ Nunca Pay-to-Win &nbsp;·&nbsp; ✓ Windows 10/11",hstat_players:"Jogadores",hstat_rating:"Nota Steam",hstat_free_num:"100%",hstat_free:"Grátis",live_counter_text:"jogadores baixaram na última hora",nav_gameplay:"Gameplay",nav_abilities:"Habilidades",nav_world:"Mundo",nav_system:"Sistema",nav_faq:"FAQ",hero_eyebrow:"Grátis — RPG de Ação em Mundo Aberto",hero_subtitle:"Chefes Épicos. Maestria com a Espada. Combate Aéreo.<br>Um Mundo Aberto Inteiro — Custo Zero.",hero_tagline:"9M jogadores · 9/10 Steam · 100% Grátis",cta_download:"▶ Jogar Grátis Agora — Windows",cta_short:"▶ Jogar Grátis Agora",trust_1:"Instalador Oficial Gratuito",trust_2:"Compatível com Windows",trust_3:"Download Seguro",scroll_hint:"Role para Entrar",slider_label:"O Mundo de Where Winds Meet",gameplay_eyebrow:"Gameplay ao Vivo",gameplay_title:"Cada Momento, uma Obra-Prima",gameplay_desc:"Combate fluido, movimento deslumbrante, um mundo vivo aguardando sua lenda.",gameplay_label_1:"Maestria com a Lâmina",gameplay_label_2:"Caminhar sobre a Água",gameplay_label_3:"Combate Aéreo",gameplay_label_4:"Exploração Urbana",trailer_eyebrow:"Trailer Oficial de Gameplay",trailer_title:"Testemunhe a Lenda em Movimento",abilities_eyebrow:"Artes Lendárias",abilities_title:"Comande o Impossível",abilities_desc:"Transcenda os limites mortais. Domine técnicas esquecidas que desafiam o céu e a terra.",ability_1_title:"Correr sobre a Água",ability_1_desc:"Domine o Passo da Onda — uma técnica tão refinada que seus pés mal tocam a superfície.",ability_2_title:"Saltar entre Telhados",ability_2_desc:"A técnica do Voo da Andorinha permite planar pelos horizontes de cidades antigas.",ability_3_title:"Dominar as Artes da Espada",ability_3_desc:"Desbloqueie estilos proibidos de espada transmitidos por dinastias.",ability_4_title:"Artes Marciais Aéreas",ability_4_desc:"Encadeie golpes no ar, esquive de flechas e desfeche ataques devastadores das alturas.",ability_5_title:"Curar ou Construir — Seu Caminho",ability_5_desc:"Nem todas as lendas nascem da espada. Seja médico ou arquiteto que molda as cidades do império.",ability_6_title:"Visão Interior — Ler o Vento",ability_6_desc:"Perceba inimigos através de paredes, leia a intenção de um golpe antes que chegue.",map_eyebrow:"Explorar o Império",map_title:"Um Mundo Vivo para Descobrir",map_desc:"Das estepes do norte aos mares do sul — cada região guarda segredos ancestrais.",marker_1:"Passo de Yinchuan",marker_1_preview:"PASSO DO NORTE",marker_2:"Chang'an",marker_2_preview:"CAPITAL IMPERIAL",marker_3:"Picos de Wudang",marker_3_preview:"QUARTEL-GENERAL",marker_4:"Yangzhou",marker_4_preview:"PORTO ANTIGO",marker_5:"Baía de Guangzhou",marker_5_preview:"COSTA SUL",marker_6:"Penhascos Huashan",marker_6_preview:"MONTANHAS SAGRADAS",sysreq_eyebrow:"Requisitos do Sistema",sysreq_title:"Sua Máquina está Pronta?",req_min:"Mínimo",req_rec:"Recomendado",req_os:"Sistema",req_cpu:"Processador",req_ram:"Memória",req_gpu:"Placa de Vídeo",req_hdd:"Armazenamento",howto_eyebrow:"Sua Jornada Começa",howto_title:"Três Passos para Entrar no Mundo",step_1_title:"Baixar Instalador",step_1_desc:"Clique em Baixar. O instalador oficial é leve, rápido e completamente gratuito.",step_2_title:"Executar Instalação",step_2_desc:"Inicie o instalador e siga as etapas. O jogo se instala no drive escolhido.",step_3_title:"Entrar no Mundo",step_3_desc:"Sua lenda começa no momento em que você carrega. A China antiga aguarda.",final_eyebrow:"Sua Lenda Aguarda",final_title:"Entre no Mundo de<br>Where Winds Meet",final_desc:"Um download gratuito. Uma jornada lendária.<br>A China antiga como nunca antes.",final_badges:"Gratuito · Instalador Oficial · Windows 10/11 · Seguro e Verificado",faq_eyebrow:"Perguntas Frequentes",faq_title:"Antes de Começar",faq_1_q:"Where Winds Meet é gratuito?",faq_1_a:"Sim. O jogo está disponível como download gratuito. O instalador oficial contém o jogo base completo.",faq_2_q:"O download é seguro?",faq_2_a:"Absolutamente. O instalador é assinado digitalmente, livre de vírus, servido de servidores oficiais.",faq_3_q:"Qual plataforma é suportada?",faq_3_a:"Where Winds Meet funciona apenas em Windows PC (Windows 10 e 11, 64 bits).",faq_4_q:"Preciso de um PC potente?",faq_5_q:"É Pay-to-Win?",faq_5_a:"De jeito nenhum. O sistema gacha aplica-se apenas a cosméticos — zero impacto no gameplay, poder de combate ou história. Tudo que importa é conquistado jogando.",faq_6_q:"É realmente 100% gratuito?",faq_6_a:"Sim. Cada região, missão, chefe e capítulo é completamente gratuito. Sem paywall, sem nível premium necessário.",footer_text:"Todos os direitos reservados · Windows 10/11 · Download Oficial Gratuito"},
 
-  ar:{lang_name:"العربية",nav_gameplay:"اللعب",nav_abilities:"المهارات",nav_world:"العالم",nav_system:"النظام",nav_faq:"الأسئلة",hero_eyebrow:"لعبة أكشن ووكسيا في عالم مفتوح",hero_subtitle:"الصين القديمة. سماء لا حدود لها. مسار واحد أسطوري.",hero_tagline:"كُن قديس السيف من أسرة تانغ",cta_download:"تحميل Where Winds Meet لنظام Windows",cta_short:"تحميل لنظام Windows",trust_1:"مثبّت رسمي مجاني",trust_2:"متوافق مع Windows",trust_3:"تحميل آمن",scroll_hint:"مرّر للدخول",slider_label:"عالم Where Winds Meet",gameplay_eyebrow:"طريقة اللعب المباشرة",gameplay_title:"كل لحظة تحفة فنية",gameplay_desc:"قتال سلس، حركة خلاّبة، عالم حي ينتظر أسطورتك.",gameplay_label_1:"إتقان النصل",gameplay_label_2:"المشي على الماء",gameplay_label_3:"القتال الجوي",gameplay_label_4:"استكشاف المدينة",trailer_eyebrow:"العرض الرسمي لطريقة اللعب",trailer_title:"اشهد الأسطورة في حركة",abilities_eyebrow:"الفنون الأسطورية",abilities_title:"أتقن المستحيل",abilities_desc:"تجاوز حدود الفانين. أتقن فنوناً منسية تتحدى السماء والأرض.",ability_1_title:"الركض فوق الماء",ability_1_desc:"أتقن خطوة الموجة — تقنية مصقولة لدرجة أن قدميك تكاد تلمس السطح فقط. الأنهار تصبح طرقاً.",ability_2_title:"القفز بين أسطح المنازل",ability_2_desc:"تقنية طيران السنونو تجعلك تحلق فوق أفق المدن القديمة.",ability_3_title:"إتقان فنون السيف الأسطورية",ability_3_desc:"افتح أساليب السيف المحظورة المتوارثة عبر الأسرات الحاكمة.",ability_4_title:"فنون القتال الجوية",ability_4_desc:"تسلق فوق مستوى الفانين. سلسل الضربات في الهواء وأنزل ضربات مدمرة من الأعلى.",ability_5_title:"اختر مسارك: الشفاء أو البناء",ability_5_desc:"ليست كل الأساطير مصنوعة من السيف. كن طبيباً أو مهندساً يعيد تشكيل مدن الإمبراطورية.",ability_6_title:"الرؤية الداخلية — اقرأ الريح",ability_6_desc:"أدرك الأعداء عبر الجدران، واقرأ نية الضربة قبل أن تصل.",map_eyebrow:"استكشف الإمبراطورية",map_title:"عالم حي في انتظار الاكتشاف",map_desc:"من السهوب الشمالية إلى البحار الجنوبية — كل منطقة تحمل أسراراً قديمة.",marker_1:"ممر ينتشوان",marker_1_preview:"الممر الشمالي",marker_2:"تشانغ آن",marker_2_preview:"العاصمة الإمبراطورية",marker_3:"قمم ووداينغ",marker_3_preview:"مقر الطائفة",marker_4:"يانغتشو",marker_4_preview:"الميناء القديم",marker_5:"خليج قوانغتشو",marker_5_preview:"الساحل الجنوبي",marker_6:"جروف هواشان",marker_6_preview:"الجبال المقدسة",sysreq_eyebrow:"متطلبات النظام",sysreq_title:"هل جهازك جاهز؟",req_min:"الحد الأدنى",req_rec:"الموصى به",req_os:"نظام التشغيل",req_cpu:"المعالج",req_ram:"الذاكرة",req_gpu:"بطاقة الرسومات",req_hdd:"التخزين",howto_eyebrow:"رحلتك تبدأ",howto_title:"ثلاث خطوات لدخول العالم",step_1_title:"تحميل المثبّت",step_1_desc:"انقر فوق زر التحميل. المثبّت الرسمي خفيف وسريع ومجاني تماماً.",step_2_title:"تشغيل الإعداد",step_2_desc:"شغّل المثبّت واتبع الخطوات الإرشادية. تُنصَّب اللعبة على القرص الذي تختاره.",step_3_title:"ادخل العالم",step_3_desc:"تبدأ أسطورتك منذ لحظة التحميل. الصين القديمة في انتظارك.",final_eyebrow:"أسطورتك في الانتظار",final_title:"ادخل عالم<br>Where Winds Meet",final_desc:"تحميل واحد مجاني. رحلة أسطورية واحدة.<br>الصين القديمة كما لم تشعر بها من قبل.",final_badges:"مجاني · مثبّت رسمي · Windows 10/11 · آمن وموثوق",faq_eyebrow:"أسئلة شائعة",faq_title:"قبل أن تبدأ",faq_1_q:"هل Where Winds Meet مجانية؟",faq_1_a:"نعم. اللعبة متاحة للتحميل مجاناً. يحتوي المثبّت الرسمي على اللعبة الأساسية الكاملة.",faq_2_q:"هل التحميل آمن؟",faq_2_a:"بالتأكيد. المثبّت موقّع رقمياً، خالٍ من الفيروسات، ومقدَّم من الخوادم الرسمية.",faq_3_q:"ما هي المنصة المدعومة؟",faq_3_a:"تعمل اللعبة فقط على Windows PC (ويندوز 10 و 11، 64 بت).",faq_4_q:"هل أحتاج جهازاً قوياً؟",faq_4_a:"معظم أجهزة الكمبيوتر متوسطة المستوى من السنوات الأربع الماضية ستشغّله بشكل مريح.",footer_text:"جميع الحقوق محفوظة · Windows 10/11 · تحميل رسمي مجاني"},
+  ar:{lang_name:"العربية",urgency_text:"🔥 <strong>الإصدار 1.4 “Home Afar”</strong> — محتوى جديد متاح الآن · مجاني 100%",hero_headline:"لعبة RPG الووكسيا التي يلعبها الجميع",hero_reassurance:"✓ بدون بطاقة ائتمان &nbsp;·&nbsp; ✓ لا Pay-to-Win &nbsp;·&nbsp; ✓ Windows 10/11",hstat_players:"لاعب",hstat_rating:"تقييم Steam",hstat_free_num:"100%",hstat_free:"مجاني",live_counter_text:"لاعب حمّل في الساعة الماضية",nav_gameplay:"اللعب",nav_abilities:"المهارات",nav_world:"العالم",nav_system:"النظام",nav_faq:"الأسئلة",hero_eyebrow:"مجانية تماماً — لعبة أكشن في عالم مفتوح",hero_subtitle:"معارك الزعماء. فنون السيف. القتال الجوي.<br>عالم مفتوح بالكامل — بدون أي تكلفة.",hero_tagline:"+9 مليون لاعب · 9/10 Steam · مجانية 100%",cta_download:"▶ العب مجاناً الآن — Windows",cta_short:"▶ العب مجاناً الآن",trust_1:"مثبّت رسمي مجاني",trust_2:"متوافق مع Windows",trust_3:"تحميل آمن",scroll_hint:"مرّر للدخول",slider_label:"عالم Where Winds Meet",gameplay_eyebrow:"طريقة اللعب المباشرة",gameplay_title:"كل لحظة تحفة فنية",gameplay_desc:"قتال سلس، حركة خلاّبة، عالم حي ينتظر أسطورتك.",gameplay_label_1:"إتقان النصل",gameplay_label_2:"المشي على الماء",gameplay_label_3:"القتال الجوي",gameplay_label_4:"استكشاف المدينة",trailer_eyebrow:"العرض الرسمي لطريقة اللعب",trailer_title:"اشهد الأسطورة في حركة",abilities_eyebrow:"الفنون الأسطورية",abilities_title:"أتقن المستحيل",abilities_desc:"تجاوز حدود الفانين. أتقن فنوناً منسية تتحدى السماء والأرض.",ability_1_title:"الركض فوق الماء",ability_1_desc:"أتقن خطوة الموجة — تقنية مصقولة لدرجة أن قدميك تكاد تلمس السطح فقط. الأنهار تصبح طرقاً.",ability_2_title:"القفز بين أسطح المنازل",ability_2_desc:"تقنية طيران السنونو تجعلك تحلق فوق أفق المدن القديمة.",ability_3_title:"إتقان فنون السيف الأسطورية",ability_3_desc:"افتح أساليب السيف المحظورة المتوارثة عبر الأسرات الحاكمة.",ability_4_title:"فنون القتال الجوية",ability_4_desc:"تسلق فوق مستوى الفانين. سلسل الضربات في الهواء وأنزل ضربات مدمرة من الأعلى.",ability_5_title:"اختر مسارك: الشفاء أو البناء",ability_5_desc:"ليست كل الأساطير مصنوعة من السيف. كن طبيباً أو مهندساً يعيد تشكيل مدن الإمبراطورية.",ability_6_title:"الرؤية الداخلية — اقرأ الريح",ability_6_desc:"أدرك الأعداء عبر الجدران، واقرأ نية الضربة قبل أن تصل.",map_eyebrow:"استكشف الإمبراطورية",map_title:"عالم حي في انتظار الاكتشاف",map_desc:"من السهوب الشمالية إلى البحار الجنوبية — كل منطقة تحمل أسراراً قديمة.",marker_1:"ممر ينتشوان",marker_1_preview:"الممر الشمالي",marker_2:"تشانغ آن",marker_2_preview:"العاصمة الإمبراطورية",marker_3:"قمم ووداينغ",marker_3_preview:"مقر الطائفة",marker_4:"يانغتشو",marker_4_preview:"الميناء القديم",marker_5:"خليج قوانغتشو",marker_5_preview:"الساحل الجنوبي",marker_6:"جروف هواشان",marker_6_preview:"الجبال المقدسة",sysreq_eyebrow:"متطلبات النظام",sysreq_title:"هل جهازك جاهز؟",req_min:"الحد الأدنى",req_rec:"الموصى به",req_os:"نظام التشغيل",req_cpu:"المعالج",req_ram:"الذاكرة",req_gpu:"بطاقة الرسومات",req_hdd:"التخزين",howto_eyebrow:"رحلتك تبدأ",howto_title:"ثلاث خطوات لدخول العالم",step_1_title:"تحميل المثبّت",step_1_desc:"انقر فوق زر التحميل. المثبّت الرسمي خفيف وسريع ومجاني تماماً.",step_2_title:"تشغيل الإعداد",step_2_desc:"شغّل المثبّت واتبع الخطوات الإرشادية. تُنصَّب اللعبة على القرص الذي تختاره.",step_3_title:"ادخل العالم",step_3_desc:"تبدأ أسطورتك منذ لحظة التحميل. الصين القديمة في انتظارك.",final_eyebrow:"أسطورتك في الانتظار",final_title:"ادخل عالم<br>Where Winds Meet",final_desc:"تحميل واحد مجاني. رحلة أسطورية واحدة.<br>الصين القديمة كما لم تشعر بها من قبل.",final_badges:"مجاني · مثبّت رسمي · Windows 10/11 · آمن وموثوق",faq_eyebrow:"أسئلة شائعة",faq_title:"قبل أن تبدأ",faq_1_q:"هل Where Winds Meet مجانية؟",faq_1_a:"نعم. اللعبة متاحة للتحميل مجاناً. يحتوي المثبّت الرسمي على اللعبة الأساسية الكاملة.",faq_2_q:"هل التحميل آمن؟",faq_2_a:"بالتأكيد. المثبّت موقّع رقمياً، خالٍ من الفيروسات، ومقدَّم من الخوادم الرسمية.",faq_3_q:"ما هي المنصة المدعومة؟",faq_3_a:"تعمل اللعبة فقط على Windows PC (ويندوز 10 و 11، 64 بت).",faq_4_q:"هل أحتاج جهازاً قوياً؟",faq_5_q:"هل هي Pay-to-Win?",faq_5_a:"لا على الإطلاق. نظام الغاتشا يقتصر على العناصر التجميلية فقط — لا تأثير على طريقة اللعب أو قوة القتال أو القصة. كل ما يهم يُكسب من خلال اللعب.",faq_6_q:"هل هي مجانية 100% حقاً؟",faq_6_a:"نعم. كل منطقة ومهمة وزعيم وفصل من القصة مجاني تماماً. لا حواجز للدفع، ولا مستوى مميز مطلوب.",footer_text:"جميع الحقوق محفوظة · Windows 10/11 · تحميل رسمي مجاني"},
 
-  zh:{lang_name:"中文",nav_gameplay:"游玩",nav_abilities:"武学",nav_world:"世界",nav_system:"配置",nav_faq:"问答",hero_eyebrow:"史诗级武侠开放世界RPG",hero_subtitle:"古老中华。无垠苍穹。一条传奇之路。",hero_tagline:"成为唐朝的剑圣",cta_download:"下载《乘风而遇》Windows版",cta_short:"下载 Windows版",trust_1:"免费官方安装包",trust_2:"Windows兼容",trust_3:"安全下载",scroll_hint:"向下滚动进入",slider_label:"《乘风而遇》的世界",gameplay_eyebrow:"实时游玩",gameplay_title:"每一刻，皆是传世之作",gameplay_desc:"流畅战斗，震撼移动，一个鲜活的世界等待你的传说。",gameplay_label_1:"刀法精通",gameplay_label_2:"水上行走",gameplay_label_3:"空中格斗",gameplay_label_4:"城市探索",trailer_eyebrow:"官方游玩预告",trailer_title:"见证传奇，动若惊鸿",abilities_eyebrow:"绝世武学",abilities_title:"驾驭不可能",abilities_desc:"超越凡人极限。掌握遗忘的武技，逆天而行，撼地而歌。",ability_1_title:"水上行云",ability_1_desc:"掌握涟漪步——步法精妙，双足轻点水面，江河湖泊皆成坦途。",ability_2_title:"飞檐走壁",ability_2_desc:"燕飞式轻功令你翱翔于古城飞檐之上，宫墙塔顶任你驰骋。",ability_3_title:"修炼绝世剑法",ability_3_desc:"解锁历代相传的禁忌剑法，每一式皆承载着沉睡剑师的魂魄。",ability_4_title:"凌空武技",ability_4_desc:"超凡入圣，腾空连击，矢雨中闪躲，俯身猛攻，威震四方。",ability_5_title:"医者仁心 或 匠心独运",ability_5_desc:"并非所有传说皆因剑而起。以医者之名救死扶伤，或以匠师之手重塑帝都。",ability_6_title:"内观明心——感知风息",ability_6_desc:"透视城墙感知敌踪，先敌而动，与天地万物合而为一。",map_eyebrow:"探索帝国版图",map_title:"一个鲜活的世界等你发现",map_desc:"从北方草原到南海之滨——每一片土地皆藏有上古秘密。",marker_1:"银川关",marker_1_preview:"北疆要道",marker_2:"长安",marker_2_preview:"皇朝都城",marker_3:"武当山",marker_3_preview:"武林总舵",marker_4:"扬州",marker_4_preview:"古代商港",marker_5:"广州湾",marker_5_preview:"南海之滨",marker_6:"华山绝壁",marker_6_preview:"圣山仙峰",sysreq_eyebrow:"系统要求",sysreq_title:"你的电脑准备好了吗？",req_min:"最低配置",req_rec:"推荐配置",req_os:"操作系统",req_cpu:"处理器",req_ram:"内存",req_gpu:"显卡",req_hdd:"存储空间",howto_eyebrow:"踏上征途",howto_title:"三步进入游戏世界",step_1_title:"下载安装包",step_1_desc:"点击下载按钮。官方安装包轻巧快速，完全免费。",step_2_title:"运行安装程序",step_2_desc:"启动安装程序并按照引导步骤操作，游戏将安装到你选择的磁盘。",step_3_title:"踏入游戏世界",step_3_desc:"加载画面出现的那一刻，你的传说就此开始。古老中华，翘首以盼。",final_eyebrow:"你的传说在等待",final_title:"踏入《乘风而遇》<br>的传奇世界",final_desc:"一次免费下载。一段传奇旅程。<br>古老中华，栩栩如生。",final_badges:"免费下载 · 官方安装包 · Windows 10/11 · 安全可信",faq_eyebrow:"常见问题",faq_title:"开始之前",faq_1_q:"《乘风而遇》免费吗？",faq_1_a:"是的。游戏可免费下载。官方安装包包含完整基础游戏，无需预先付费。",faq_2_q:"下载安全吗？",faq_2_a:"绝对安全。安装包经过数字签名，无病毒，由官方服务器提供，不含任何第三方软件。",faq_3_q:"支持哪些平台？",faq_3_a:"《乘风而遇》仅支持Windows PC（Windows 10和11，64位）。",faq_4_q:"需要高性能电脑吗？",faq_4_a:"近4年内大多数中端游戏电脑均可在高画质下流畅运行。请查阅上方系统要求。",footer_text:"版权所有 · Windows 10/11 · 官方免费下载"}
+  zh:{lang_name:"中文",urgency_text:"🔥 <strong>1.4版本“归家”</strong> — 全新内容现已上线 · 完全免费",hero_headline:"全民都在下载的武侠RPG",hero_reassurance:"✓ 无需信用卡 &nbsp;·&nbsp; ✓ 永不Pay-to-Win &nbsp;·&nbsp; ✓ Windows 10/11",hstat_players:"玩家",hstat_rating:"Steam评分",hstat_free_num:"100%",hstat_free:"免费",live_counter_text:"名玩家在过去一小时内下载",nav_gameplay:"游玩",nav_abilities:"武学",nav_world:"世界",nav_system:"配置",nav_faq:"问答",hero_eyebrow:"完全免费 — 开放世界动作RPG",hero_subtitle:"史诗Boss战。绝世剑法。凌空武技。<br>一整片开放世界——完全免费。",hero_tagline:"900万玩家 · Steam 9/10 · 100%免费",cta_download:"▶ 立即免费畅玩 — Windows",cta_short:"▶ 立即免费畅玩",trust_1:"免费官方安装包",trust_2:"Windows兼容",trust_3:"安全下载",scroll_hint:"向下滚动进入",slider_label:"《乘风而遇》的世界",gameplay_eyebrow:"实时游玩",gameplay_title:"每一刻，皆是传世之作",gameplay_desc:"流畅战斗，震撼移动，一个鲜活的世界等待你的传说。",gameplay_label_1:"刀法精通",gameplay_label_2:"水上行走",gameplay_label_3:"空中格斗",gameplay_label_4:"城市探索",trailer_eyebrow:"官方游玩预告",trailer_title:"见证传奇，动若惊鸿",abilities_eyebrow:"绝世武学",abilities_title:"驾驭不可能",abilities_desc:"超越凡人极限。掌握遗忘的武技，逆天而行，撼地而歌。",ability_1_title:"水上行云",ability_1_desc:"掌握涟漪步——步法精妙，双足轻点水面，江河湖泊皆成坦途。",ability_2_title:"飞檐走壁",ability_2_desc:"燕飞式轻功令你翱翔于古城飞檐之上，宫墙塔顶任你驰骋。",ability_3_title:"修炼绝世剑法",ability_3_desc:"解锁历代相传的禁忌剑法，每一式皆承载着沉睡剑师的魂魄。",ability_4_title:"凌空武技",ability_4_desc:"超凡入圣，腾空连击，矢雨中闪躲，俯身猛攻，威震四方。",ability_5_title:"医者仁心 或 匠心独运",ability_5_desc:"并非所有传说皆因剑而起。以医者之名救死扶伤，或以匠师之手重塑帝都。",ability_6_title:"内观明心——感知风息",ability_6_desc:"透视城墙感知敌踪，先敌而动，与天地万物合而为一。",map_eyebrow:"探索帝国版图",map_title:"一个鲜活的世界等你发现",map_desc:"从北方草原到南海之滨——每一片土地皆藏有上古秘密。",marker_1:"银川关",marker_1_preview:"北疆要道",marker_2:"长安",marker_2_preview:"皇朝都城",marker_3:"武当山",marker_3_preview:"武林总舵",marker_4:"扬州",marker_4_preview:"古代商港",marker_5:"广州湾",marker_5_preview:"南海之滨",marker_6:"华山绝壁",marker_6_preview:"圣山仙峰",sysreq_eyebrow:"系统要求",sysreq_title:"你的电脑准备好了吗？",req_min:"最低配置",req_rec:"推荐配置",req_os:"操作系统",req_cpu:"处理器",req_ram:"内存",req_gpu:"显卡",req_hdd:"存储空间",howto_eyebrow:"踏上征途",howto_title:"三步进入游戏世界",step_1_title:"下载安装包",step_1_desc:"点击下载按钮。官方安装包轻巧快速，完全免费。",step_2_title:"运行安装程序",step_2_desc:"启动安装程序并按照引导步骤操作，游戏将安装到你选择的磁盘。",step_3_title:"踏入游戏世界",step_3_desc:"加载画面出现的那一刻，你的传说就此开始。古老中华，翘首以盼。",final_eyebrow:"你的传说在等待",final_title:"踏入《乘风而遇》<br>的传奇世界",final_desc:"一次免费下载。一段传奇旅程。<br>古老中华，栩栩如生。",final_badges:"免费下载 · 官方安装包 · Windows 10/11 · 安全可信",faq_eyebrow:"常见问题",faq_title:"开始之前",faq_1_q:"《乘风而遇》免费吗？",faq_1_a:"是的。游戏可免费下载。官方安装包包含完整基础游戏，无需预先付费。",faq_2_q:"下载安全吗？",faq_2_a:"绝对安全。安装包经过数字签名，无病毒，由官方服务器提供，不含任何第三方软件。",faq_3_q:"支持哪些平台？",faq_3_a:"《乘风而遇》仅支持Windows PC（Windows 10和11，64位）。",faq_4_q:"需要高性能电脑吗？",faq_5_q:"是否存在Pay-to-Win付费赢？",faq_5_a:"绝对不是。抽卡系统仅适用于服装等外观道具，对游戏玩法、战斗力或剧情毫无影响。所有重要内容都可以通过游戏获得。",faq_6_q:"真的完全免费吗？",faq_6_a:"是的。每个地区、每个任务、每个Boss、每个故事章节都完全免费，没有任何付费墙，无需高级订阅。",footer_text:"版权所有 · Windows 10/11 · 官方免费下载"}
 };
 
 const RTL = ['ar'];
@@ -889,6 +1402,37 @@ document.querySelectorAll('.slider-track-wrap').forEach(w=>{
 
 // ── Hero parallax ──
 window.addEventListener('scroll',()=>{const sy=window.scrollY,hc=document.querySelector('.hero-content');if(hc&&sy<window.innerHeight){hc.style.transform=`translateY(${sy*.3}px)`;hc.style.opacity=Math.max(0,1-(sy/window.innerHeight)*1.2);}},{passive:true});
+
+// ── Live download counter ──
+(function(){
+  const el = document.getElementById('live-count');
+  if (!el) return;
+  let base = 200 + Math.floor(Math.random() * 80);
+  el.textContent = base;
+  setInterval(() => {
+    const delta = Math.floor(Math.random() * 7) - 2; // -2 to +4
+    base = Math.max(180, Math.min(320, base + delta));
+    el.textContent = base;
+  }, 4500);
+})();
+
+// ── Urgency banner close ──
+(function(){
+  const bar = document.getElementById('urgency-bar');
+  const btn = document.getElementById('urgency-close');
+  if (!btn || !bar) return;
+  btn.addEventListener('click', () => {
+    bar.style.transition = 'opacity .3s, transform .3s';
+    bar.style.opacity = '0';
+    bar.style.transform = 'translateY(-100%)';
+    setTimeout(() => {
+      bar.style.display = 'none';
+      document.getElementById('site-header').style.top = '0';
+      document.body.style.paddingTop = '0';
+    }, 300);
+  });
+})();
+
 </script>
 </body>
 </html>
